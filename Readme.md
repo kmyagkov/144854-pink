@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кирилл Мягков](https://up.htmlacademy.ru/adaptive/9/user/144854).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Сёмушкин](https://htmlacademy.ru/profile/id48647).
 
 ---
 
