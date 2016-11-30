@@ -7,44 +7,40 @@
   <body>
     <header class="page-header">
       <div class="page-header-wrapper">
-        <div class="pade-header__logo">
+        <div class="logo--page-header">
           <a href="index.html">
             <img src="" width="" height="" alt="PINK logo">
           </a>
         </div>
         <nav class="main-menu">
           <button class="main-menu__toggle" type="button">Открыть меню</button>
-          <div class="main-menu__wrapper">
-            <ul class="main-menu__items">
-              <li class="main-menu__item">
-                <a href="">Главная</a>
-              </li>
-              <li class="main-menu__item">
-                <a href="">Фотографии</a>
-              </li>
-              <li class="main-menu__item">
-                <a href="">Конкурс</a>
-              </li>
-              <li class="main-menu__item">
-                <a href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-menu__items">
+            <li class="main-menu__item">
+              <a href="">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
         </nav>
-        <h1 class="page-title">
-          Конкурс на самое
-          безбашенное
-          путешествие с Пинк
-        </h1>
+        <div class="intro">
+          <h1 class="page-title">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </h1>
+        </div>
       </div>
     </header>
     <main>
       <form class="promo-form">
         <div class="promo-form__wrapper">
-          <p class="promo-form__header">
-            Поделитесь своей историей и получите
-            шанс выиграть ценный приз — 1000
-            миль на вашу бонусную карту! 
+          <p class="promo-form__intro">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </p>
         </div>
         <fieldset class="promo-form__fullname">
@@ -66,33 +62,33 @@
         <fieldset class="promo-form__achievements">
           <div class="promo-form__wrapper">
             <legend>
-              Ваши безбашенные
-              достижения в путешествии
+              Ваши безбашенные достижения в путешествии
             </legend>
             <div class="promo-form__item">
-              <input type="checkbox" name="achievements" value="selfie-shark" id="achievements-shark" checked>
+              <input type="checkbox" name="selfie-shark" id="achievements-shark" checked>
               <label for="achievements-shark">Сделал селфи с акулой</label>
             </div>
             <div class="promo-form__item">
-              <input type="checkbox" name="achievements" value="sunburn" id="achievements-sunburn" checked>
+              <input type="checkbox" name="sunburn" id="achievements-sunburn" checked>
               <label for="achievements-sunburn">Обгорел на пляже</label>
             </div>
             <div class="promo-form__item">
-              <input type="checkbox" name="achievements" value="chuck" id="achievements-chuck">
+              <input type="checkbox" name="chuck" id="achievements-chuck">
               <label for="achievements-chuck">Видел Чака Норриса</label>
             </div>
             <div class="promo-form__item">
-              <input type="checkbox" name="achievements" value="buy-gifts" id="achievements-buy-gifts">
+              <input type="checkbox" name="buy-gifts" id="achievements-buy-gifts">
               <label for="achievements-buy-gifts">Накупил сувенирова</label>
             </div>
             <div class="promo-form__item">
-              <input type="checkbox" name="achievements" value="tower" id="achievements-tower" checked>
+              <input type="checkbox" name="tower" id="achievements-tower" checked>
               <label for="achievements-tower">Удержал башню</label>
             </div>
             <div class="promo-form__item">
-              <input type="checkbox" name="achievements" value="destroy-hotel" id="achievements-destroy-hotel">
+              <input type="checkbox" name="destroy-hotel" id="achievements-destroy-hotel">
               <label for="achievements-destroy-hotel">Разгромил отель</label>
             </div>
+          </div>
         </fieldset>
         <fieldset class="promo-form__contacts">
           <div class="promo-form__wrapper">
@@ -108,8 +104,7 @@
         </fieldset>
         <fieldset class="promo-form__platform">
           <legend>
-            С каким приложением
-            путешествовали?
+            С каким приложением путешествовали?
           </legend>
           <div class="promo-form__item">
             <input type="radio" name="platform" value="ios" id="platform-ios" checked>
@@ -126,10 +121,10 @@
         </fieldset>
           <fieldset class="promo-form__emotions">
             <legend>Опишите свои эмоции</legend>
-            <textarea rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <textarea name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
           <button type="submit" class="button">Отправить форму</button>
-          <span class="promo-form__require"><sup>*</sup> - обязательные поля</span>
+          <span class="promo-form__undernote"><sup>*</sup> - обязательные поля</span>
       </form>
     </main>
     <footer class="page-footer">
@@ -139,22 +134,20 @@
           <img src="" width="" height="" alt="PINK logo">
         </a>
         </div>
-        <div class="page-footer__social">
-          <section class="social-links">
-            <a class="social-link social-link--twitter" href="">Twitter</a>
-            <a class="social-link social-link--facebook" href="">Facebook</a>
-            <a class="social-link social-link--youtube" href="">Youtube</a>
-          </section>
-        </div>
+        <section class="social-links">
+          <a class="social-link social-link--twitter" href="">Twitter</a>
+          <a class="social-link social-link--facebook" href="">Facebook</a>
+          <a class="social-link social-link--youtube" href="">Youtube</a>
+        </section>
+        <section class="page-footer__copyright">
+          <span>Разработано:</span>
+          <div class="logo--copyright">
+            <a href="https://htmlacademy.ru/">
+              <img src="" width="" height="" alt="HTML Academy">
+            </a>
+          </div>
+        </section>
       </div>
-      <section class="page-footer__copyright">
-        <span>Разработано:</span>
-        <div class="page-footer__copyright-logo">
-          <a href="https://htmlacademy.ru/">
-            <img src="" width="" height="" alt="HTML Academy">
-          </a>
-        </div>
-      </section>
     </footer>
   </body>
 </html>
