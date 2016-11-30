@@ -10,27 +10,25 @@
         Мобильное приложение PINK
       </h1>
       <div class="page-header-wrapper">
-        <div class="pade-header__logo">
+        <div class="logo--page-header">
           <img src="" width="" height="" alt="PINK logo">
         </div>
         <nav class="main-menu">
           <button class="main-menu__toggle" type="button">Открыть меню</button>
-          <div class="main-menu__wrapper">
-            <ul class="main-menu__items">
-              <li class="main-menu__item">
-                <a href="">Главная</a>
-              </li>
-              <li class="main-menu__item">
-                <a href="">Фотографии</a>
-              </li>
-              <li class="main-menu__item">
-                <a href="">Конкурс</a>
-              </li>
-              <li class="main-menu__item">
-                <a href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-menu__items">
+            <li class="main-menu__item">
+              <a href="">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
         </nav>
         <section class="download">
           <a class="btn" href="">Скачать приложение</a>
@@ -40,8 +38,7 @@
             <a class="download-link download-link--windows" href="">Скачать в Windows Store</a>
           </div>
           <p class="download__description">
-            Доступно для iPhone, iPad, Android,
-            Windows Phone, OS X, Windows 8
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
         </section>
       </div>
@@ -51,23 +48,19 @@
         <h2 class="visually-hidden">Особенности приложения</h2>
         <div class="features__header">
           <p>
-            Устали от серости
-            мегаполиса?
+            Устали от серости мегаполиса?
           </p>
           <p>
-            Нам есть, что вам 
-            предложить!
+            Нам есть, что вам предложить!
           </p>
         </div>
-        <ul class="features__items">
+        <ul class="features__list">
           <li class="feature__item">
             <h3 class="feature__item-title">
               Поднимает настроение
             </h3>
             <p>
-              Приложение позволит вам победить
-              осеннюю хандру и депрессию
-              буквально в несколько кликов!
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </li>
           <li class="feature__item">
@@ -75,9 +68,7 @@
               Меняет мир вокруг
             </h3>
             <p>
-              Сделайте снимок и украсьте его
-              смайликом или текстовой подписью,
-              чтобы усилить эффект
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </li>
           <li class="feature__item">
@@ -85,56 +76,39 @@
               Заводит новых друзей
             </h3>
             <p>
-              Ставьте лайки, комментируте, делитесь
-              фотографиями с друзьями и заводите
-              новых
+              Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>
         </ul>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="visually-hidden">
-            Отзывы наших пользователей
-          </h2>
-          <input class="slider__input" type="radio" name="reviews" id="reviews-input-1 checked">
-          <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
-          <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
-        </div>
-        <div class="reviews__items">
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__user-name">Николай Петров</cite>
-            <p>
-              «Это приложение перевернуло мой мир
-              и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я
-              познакомился со своей будущей женой
-              в комментариях к выложенной
-              фотографии!»
-            </p>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__user-name">Николай Петров</cite>
-            <p>
-              «Это приложение перевернуло мой мир
-              и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я
-              познакомился со своей будущей женой
-              в комментариях к выложенной
-              фотографии!»
-            </p>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__user-name">Николай Петров</cite>
-            <p>
-              «Это приложение перевернуло мой мир
-              и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я
-              познакомился со своей будущей женой
-              в комментариях к выложенной
-              фотографии!»
-            </p>
-          </blockquote>
+        <h2 class="visually-hidden">
+          Отзывы наших пользователей
+        </h2>
+        <div class="reviews__wrapper">
+          <div class="reviews__list slider">
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-1 checked">
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__user-name">Николай Петров</cite>
+              <p>
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__user-name">Николай Петров</cite>
+              <p>
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__user-name">Николай Петров</cite>
+              <p>
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+          </div>
         </div>
       </section>
       <section class="tariff">
@@ -210,24 +184,22 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <section class="page-footer__contacts">
-          <h2 class="page-footer__contacts-title">
-            Остались вопросы?
-            Свяжитесь с нами!
-          </h2>
-          <div class="page-footer__contacts-wrapper">
+        <section class="contacts">
+          <p class="contacts__header">
+            Остались вопросы? Свяжитесь с нами!
+          </p>
+          <div class="contacts__wrapper">
             <b>Звоните:</b>
-            <a href="tel:+7812555666" class="page-footer__contacts-item page-footer__contacts-item--marked">+7 (812) 555-66-66</a>
+            <a href="tel:+7812555666" class="contacts__item contacts__item--marked">+7 (812) 555-66-66</a>
           </div>
-          <div class="page-footer__contacts-wrapper">
+          <div class="contacts__wrapper">
             <b>Пишите:</b>
-            <a href="mailto:mail@htmlacademy.ru" class="page-footer__contacts-item page-footer__contacts-item--marked">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__item contacts__item--marked">mail@htmlacademy.ru</a>
           </div>
-          <div class="page-footer__contacts-wrapper">
+          <div class="contacts__wrapper">
             <b>Приезжайте в гости:</b>
-            <span class="page-footer__contacts-item page-footer__contacts-item--marked">
-              ул. Большая
-              Конюшенная, 19/8
+            <span class="contacts__item contacts__item--marked">
+              ул. Большая Конюшенная, 19/8
             </span>
           </div>
         </section>
