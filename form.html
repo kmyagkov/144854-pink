@@ -30,109 +30,109 @@
           </ul>
         </nav>
         <div class="intro">
-          <h1 class="page-title">
+          <h1 class="intro__title">
             Конкурс на самое безбашенное путешествие с Пинк
           </h1>
         </div>
       </div>
     </header>
     <main>
-      <form class="promo-form">
-        <div class="promo-form__wrapper">
-          <p class="promo-form__intro">
+      <form class="form">
+        <div class="form__wrapper">
+          <p class="form__intro">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </p>
         </div>
-        <fieldset class="promo-form__fullname">
-          <div class="promo-form__wrapper">
-            <div class="promo-form__item">
+        <fieldset class="form__fieldset">
+          <div class="form__wrapper">
+            <div class="form__item">
               <label for="promo-lastname">Фамилия:</label>
               <input type="text" name="lastname" id="promo-lastname" placeholder="Укажите   фамилию">
             </div>
-            <div class="promo-form__item">
+            <div class="form__item">
               <label for="promo-firstname">Имя:</label>
               <input type="text" name="firstname" id="promo-firstname" placeholder="Укажите ваше имя">
             </div>
-            <div class="promo-form__item">
+            <div class="form__item">
               <label for="promo-middlename">Отчество:</label>
               <input type="text" name="middlename" id="promo-middlename" placeholder="Ну и отчество тоже">
             </div>
           </div>
         </fieldset>
-        <fieldset class="promo-form__achievements">
-          <div class="promo-form__wrapper">
+        <fieldset class="form__fieldset form__fieldset--options">
+          <div class="form__wrapper">
             <legend>
               Ваши безбашенные достижения в путешествии
             </legend>
-            <div class="promo-form__item">
+            <div class="form__item">
               <input type="checkbox" name="selfie-shark" id="achievements-shark" checked>
               <label for="achievements-shark">Сделал селфи с акулой</label>
             </div>
-            <div class="promo-form__item">
+            <div class="form__item">
               <input type="checkbox" name="sunburn" id="achievements-sunburn" checked>
               <label for="achievements-sunburn">Обгорел на пляже</label>
             </div>
-            <div class="promo-form__item">
+            <div class="form__item">
               <input type="checkbox" name="chuck" id="achievements-chuck">
               <label for="achievements-chuck">Видел Чака Норриса</label>
             </div>
-            <div class="promo-form__item">
+            <div class="form__item">
               <input type="checkbox" name="buy-gifts" id="achievements-buy-gifts">
               <label for="achievements-buy-gifts">Накупил сувенирова</label>
             </div>
-            <div class="promo-form__item">
+            <div class="form__item">
               <input type="checkbox" name="tower" id="achievements-tower" checked>
               <label for="achievements-tower">Удержал башню</label>
             </div>
-            <div class="promo-form__item">
+            <div class="form__item">
               <input type="checkbox" name="destroy-hotel" id="achievements-destroy-hotel">
               <label for="achievements-destroy-hotel">Разгромил отель</label>
             </div>
           </div>
         </fieldset>
-        <fieldset class="promo-form__contacts">
-          <div class="promo-form__wrapper">
-            <div class="promo-form__item">
+        <fieldset class="form__fieldset">
+          <div class="form__wrapper">
+            <div class="form__item">
               <label for="contacts-phone">Номер телефона:</label>
-              <input type="text" name="phone" id="contacts-phone" placeholder="Номер, пожалуйста">
+              <input type="tel" name="phone" id="contacts-phone" placeholder="Номер, пожалуйста">
             </div>
-            <div class="promo-form__item">
+            <div class="form__item">
               <label for="contacts-email">Адресок почты:</label>
-              <input type="text" name="email" id="contacts-email" placeholder="Введите почту">
+              <input type="email" name="email" id="contacts-email" placeholder="Введите почту">
             </div>
           </div>
         </fieldset>
-        <fieldset class="promo-form__platform">
+        <fieldset class="form__fieldset form__fieldset--options">
           <legend>
             С каким приложением путешествовали?
           </legend>
-          <div class="promo-form__item">
+          <div class="form__item">
             <input type="radio" name="platform" value="ios" id="platform-ios" checked>
             <label for="platform-ios">Pink для iOS</label>
           </div>
-          <div class="promo-form__item">
+          <div class="form__item">
             <input type="radio" name="platform" value="android" id="platform-android">
             <label for="platform-android">Pink на Android</label>
           </div>
-          <div class="promo-form__item">
+          <div class="form__item">
             <input type="radio" name="platform" value="windows" id="platform-windows">
             <label for="platform-windows">Windows Phone</label>
           </div>
         </fieldset>
-          <fieldset class="promo-form__emotions">
-            <legend>Опишите свои эмоции</legend>
-            <textarea name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </fieldset>
-          <button type="submit" class="button">Отправить форму</button>
-          <span class="promo-form__undernote"><sup>*</sup> - обязательные поля</span>
+        <fieldset class="form__fieldset">
+          <legend>Опишите свои эмоции</legend>
+          <textarea name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+        <button type="submit" class="button">Отправить форму</button>
+        <span class="promo-form__undernote"><sup>*</sup> - обязательные поля</span>
       </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo">
-        <a href="index.html">
-          <img src="" width="" height="" alt="PINK logo">
-        </a>
+        <div class="logo logo--page-footer">
+          <a href="index.html">
+            <img src="" width="" height="" alt="PINK logo">
+          </a>
         </div>
         <section class="social-links">
           <a class="social-link social-link--twitter" href="">Twitter</a>
@@ -141,7 +141,7 @@
         </section>
         <section class="page-footer__copyright">
           <span>Разработано:</span>
-          <div class="logo--copyright">
+          <div class="logo logo--copyright">
             <a href="https://htmlacademy.ru/">
               <img src="" width="" height="" alt="HTML Academy">
             </a>
