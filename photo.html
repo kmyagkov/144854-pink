@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header-wrapper">
+      <div class="page-header__wrapper">
         <div class="logo logo--page-header">
           <a href="index.html">
             <img src="" width="" height="" alt="PINK logo">
@@ -14,7 +15,7 @@
         </div>
         <nav class="main-menu">
           <button class="main-menu__toggle" type="button">Открыть меню</button>
-          <ul class="main-menu__items">
+          <ul class="main-menu__list">
             <li class="main-menu__item">
               <a href="">Главная</a>
             </li>
@@ -62,13 +63,13 @@
             </blockquote>
             <footer class="gallery-item__footer">
               <div class="likes">
-                <a class="like-btn" href="">Мне нравится</a>
-                Нравится:<span class="likes-item__count">215</span>
+                <a class="btn btn--like" href="">Мне нравится</a>
+                Нравится:<span class="gallery-item__likes-count">215</span>
               </div>
             </footer>
           </div>
         </article>
-        <article class="gallery-item item">
+        <article class="gallery-item">
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
@@ -86,13 +87,13 @@
             </blockquote>
             <footer class="gallery-item__footer">
               <div class="likes">
-                <a class="like-btn" href="">Мне нравится</a>
-                Нравится:<span class="likes-item__count">356</span>
+                <a class="btn btn--like" href="">Мне нравится</a>
+                Нравится:<span class="gallery-item__likes-count">356</span>
               </div>
             </footer>
           </div>
         </article>
-        <article class="gallery-item item">
+        <article class="gallery-item">
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
@@ -109,12 +110,12 @@
               </p>
             </blockquote>
             <div class="gallery-item__likes">
-              <a class="like-btn" href="">Мне нравится</a>
+              <a class="btn btn--like" href="">Мне нравится</a>
               Нравится:<span class="gallery-item__likes-count">666</span>
             </div>
           </div>
         </article>
-        <article class="gallery-item item">
+        <article class="gallery-item">
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
@@ -132,13 +133,13 @@
             </blockquote>
             <footer class="gallery-item__footer">
               <div class="likes">
-                <a class="like-btn" href="">Мне нравится</a>
-                Нравится:<span class="likes-item__count">215</span>
+                <a class="btn btn--like" href="">Мне нравится</a>
+                Нравится:<span class="gallery-item__likes-count">215</span>
               </div>
             </footer>
           </div>
         </article>
-        <article class="gallery-item item">
+        <article class="gallery-item">
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
@@ -156,13 +157,13 @@
             </blockquote>
             <footer class="gallery-item__footer">
               <div class="likes">
-                <a class="like-btn" href="">Мне нравится</a>
-                Нравится:<span class="likes-item__count">4</span>
+                <a class="btn btn--like" href="">Мне нравится</a>
+                Нравится:<span class="gallery-item__likes-count">4</span>
               </div>
             </footer>
           </div>
         </article>
-        <article class="gallery-item item">
+        <article class="gallery-item">
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
@@ -180,13 +181,13 @@
             </blockquote>
             <footer class="gallery-item__footer">
               <div class="likes">
-                <a class="like-btn" href="">Мне нравится</a>
-                Нравится:<span class="likes-item__count">150</span>
+                <a class="btn btn--like" href="">Мне нравится</a>
+                Нравится:<span class="gallery-item__likes-count">150</span>
               </div>
             </footer>
           </div>
         </article>
-        <article class="gallery-item item">
+        <article class="gallery-item">
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
@@ -204,8 +205,8 @@
             </blockquote>
             <footer class="gallery-item__footer">
               <div class="likes">
-                <a class="like-btn" href="">Мне нравится</a>
-                Нравится:<span class="likes-item__count">2560</span>
+                <a class="btn btn--like" href="">Мне нравится</a>
+                Нравится:<span class="gallery-item__likes-count">2560</span>
               </div>
             </footer>
           </div>
@@ -221,7 +222,7 @@
               <img src="" width="" height="" alt="">
             </div>
             <div class="form__photo-correct">
-              <ul class="tabs">
+              <ul>
                 <li>
                   <input type="radio" name="photo-correct" value="crop-value" id="crop-value-label">
                   <label for="crop-value-label">Обрезка</label>
