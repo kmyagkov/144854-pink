@@ -1,22 +1,42 @@
 body {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 400;
   line-height: 24px;
-  color: #1d2631;
+  color: #283645;
 }
 
 h1,
 h2,
 h3,
 h4,
-p {
+p,
+blockquote {
   margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
   display: none;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2"),
+       url("../fonts/opensans.woff");
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/opensanslight.woff2"),
+       url("../fonts/opensanslight.woff");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensansbold.woff2"),
+       url("../fonts/opensansbold.woff");
 }
 
 @import "page-header.scss";
@@ -26,3 +46,15 @@ p {
 @import "download.scss";
 @import "download-link.scss";
 @import "features.scss";
+@import "reviews.scss";
+@import "tariff.scss";
+@import "contacts.scss";
+@import "logo";
+@import "gallery";
+@import "gallery-item";
+@import "likes";
+@import "photo-post";
+@import "form";
+@import "page-footer.scss";
+@import "social-links-list";
+

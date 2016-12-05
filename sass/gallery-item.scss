@@ -1,0 +1,17 @@
+.gallery-item {
+  margin-bottom: 20px;
+  &__wrapper {
+    @include wrapper(280px, 0 20px);
+
+  }
+  &__comment {
+    padding: 15px;
+    background: #f2f2f2;
+  }
+  &__photo {
+    line-height: 0;
+  }
+  &__footer {
+    background: #f2f2f2;
+  }
+}

@@ -7,34 +7,32 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="logo logo--page-header">
-          <a href="index.html">
-            <img src="" width="" height="" alt="PINK logo">
-          </a>
-        </div>
-        <nav class="main-menu">
-          <button class="main-menu__toggle" type="button">Открыть меню</button>
-          <ul class="main-menu__list">
-            <li class="main-menu__item">
-              <a href="">Главная</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="">Фотографии</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="">Конкурс</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="intro">
-          <h1 class="intro__title">
-            Фотографии пользователей
-          </h1>
-        </div>
+      <nav class="main-menu">
+        <button class="main-menu__toggle" type="button">Открыть меню</button>
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a>Фотографии</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logo logo--page-header">
+        <a href="index.html">
+          <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
+        </a>
+      </div>
+      <div class="intro intro--photo">
+        <h1 class="intro__title">
+          Фотографии пользователей
+        </h1>
       </div>
     </header>
     <main>
@@ -48,7 +46,7 @@
         <article class="gallery-item gallery-item--panorama">
           <div class="gallery-item__photo">
             <a href="">
-              <img src="" width="" height="" alt="">
+              <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorama">
             </a>
           </div>
           <div class="gallery-item__wrapper">
@@ -73,7 +71,7 @@
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
-                <img src="" width="" height="" alt="">
+                <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo1">
               </a>
             </div>
             <blockquote class="gallery-item__comment">
@@ -97,7 +95,7 @@
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
-                <img src="" width="" height="" alt="">
+                <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo2">
               </a>
             </div>
             <blockquote class="gallery-item__comment">
@@ -109,17 +107,19 @@
                 Соседи будут рады!
               </p>
             </blockquote>
-            <div class="gallery-item__likes">
-              <a class="btn btn--like" href="">Мне нравится</a>
-              Нравится:<span class="gallery-item__likes-count">666</span>
-            </div>
+            <footer class="gallery-item__footer">
+              <div class="likes">
+                <a class="btn btn--like" href="">Мне нравится</a>
+                Нравится:<span class="gallery-item__likes-count">666</span>
+              </div>
+            </footer>
           </div>
         </article>
         <article class="gallery-item">
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
-                <img src="" width="" height="" alt="">
+                <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo3">
               </a>
             </div>
             <blockquote class="gallery-item__comment">
@@ -143,7 +143,7 @@
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
-                <img src="" width="" height="" alt="">
+                <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo4">
               </a>
             </div>
             <blockquote class="gallery-item__comment">
@@ -167,7 +167,7 @@
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
-                <img src="" width="" height="" alt="">
+                <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo5">
               </a>
             </div>
             <blockquote class="gallery-item__comment">
@@ -191,7 +191,7 @@
           <div class="gallery-item__wrapper">
             <div class="gallery-item__photo">
               <a href="">
-                <img src="" width="" height="" alt="">
+                <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo6">
               </a>
             </div>
             <blockquote class="gallery-item__comment">
@@ -214,12 +214,15 @@
       </section>
       <section class="photo-post">
         <p class="photo-post__intro">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          Затмите их всех!
+        </p>
+        <p class="photo-post__intro">
+          Выкладывайте все, что накопилось в телефоне!
         </p>
         <form class="form form--photo-post" action="" method="">
           <div class="form__wrapper">
             <div class="form__image">
-              <img src="" width="" height="" alt="">
+              <img src="img/photo-7-mobile@1x.jpg" width="280" height="180" alt="photo7">
             </div>
             <div class="form__photo-correct">
               <ul>
@@ -271,10 +274,10 @@
       <div class="page-footer__wrapper">
         <div class="logo logo--page-footer">
         <a href="index.html">
-          <img src="" width="" height="" alt="PINK logo">
+          <img src="img/logo-pink-blue-mobile.svg" width="610" height="168" alt="PINK logo">
         </a>
         </div>
-        <section class="social-links">
+        <section class="social-links-list">
           <a class="social-link social-link--twitter" href="">Twitter</a>
           <a class="social-link social-link--facebook" href="">Facebook</a>
           <a class="social-link social-link--youtube" href="">Youtube</a>
@@ -283,7 +286,7 @@
           <span>Разработано:</span>
           <div class="logo logo--copyright">
             <a href="https://htmlacademy.ru/">
-              <img src="" width="" height="" alt="HTML Academy">
+              <img src="img/htmlacademy.svg" width="168" height="213" alt="HTML Academy">
             </a>
           </div>
         </section>
