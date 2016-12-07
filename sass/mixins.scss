@@ -1,0 +1,10 @@
+@mixin wrapper($wrapper-width, $wrapper-padding) {
+  width: $wrapper-width;
+  padding: $wrapper-padding;
+}
+
+@mixin list-clear() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

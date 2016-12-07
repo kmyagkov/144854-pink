@@ -3,36 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">
-        Мобильное приложение PINK
-      </h1>
-      <div class="page-header-wrapper">
-        <div class="logo--page-header">
-          <img src="" width="" height="" alt="PINK logo">
+      <nav class="main-menu">
+        <button class="main-menu__toggle" type="button">Открыть меню</button>
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logo logo--page-header">
+        <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
+      </div>
+      <div class="intro">
+        <h1 class="visually-hidden">
+          Мобильное приложение PINK
+        </h1>
+        <div class="intro__image">
+          <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="iphone">
         </div>
-        <nav class="main-menu">
-          <button class="main-menu__toggle" type="button">Открыть меню</button>
-          <ul class="main-menu__items">
-            <li class="main-menu__item">
-              <a href="">Главная</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="">Фотографии</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="">Конкурс</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="download">
+      </div>
+      <section class="download">
+        <div class="page-header__wrapper">
+          <h2 class="visually-hidden">
+            Скачать приложение
+          </h2>
           <a class="btn" href="">Скачать приложение</a>
-          <div class="download-links">
+          <div class="download__links-list">
             <a class="download-link download-link--ios" href="">Скачать в App Store</a>
             <a class="download-link download-link--android" href="">Скачать в Google Play</a>
             <a class="download-link download-link--windows" href="">Скачать в Windows Store</a>
@@ -40,8 +49,8 @@
           <p class="download__description">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
-        </section>
-      </div>
+        </div>
+      </section>
     </header>
     <main>
       <section class="features">
@@ -54,32 +63,37 @@
             Нам есть, что вам предложить!
           </p>
         </div>
-        <ul class="features__list">
-          <li class="feature__item">
-            <h3 class="feature__item-title">
-              Поднимает настроение
-            </h3>
-            <p>
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="feature__item">
-            <h3 class="feature__item-title">
-              Меняет мир вокруг
-            </h3>
-            <p>
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="feature__item">
-            <h3 class="feature__item-title">
-              Заводит новых друзей
-            </h3>
-            <p>
-              Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
+        <section class="features__list">
+          <div class="features__wrapper">
+            <section class="features__item">
+              <h3 class="features__item-title">
+                Поднимает настроение
+              </h3>
+              <p>
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </section>
+            <section class="features__item">
+              <h3 class="features__item-title">
+                Меняет мир вокруг
+              </h3>
+              <p>
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </section>
+            <section class="features__item">
+              <h3 class="features__item-title">
+                Заводит новых друзей
+              </h3>
+              <p>
+                Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+              <div class="features__image">
+                <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="iphone screen">
+              </div>
+            </section>
+          </div>
+        </section>
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">
@@ -119,66 +133,37 @@
           <input class="slider__input" type="radio" name="tariff" id="tariff-input-1">
           <input class="slider__input" type="radio" name="tariff" id="tariff-input-2 checked">
           <input class="slider__input" type="radio" name="tariff" id="tariff-input-3">
-          <div class="tariff__item slider__item">
-            <div class="tariff__item-title">
-              <h3>Стандарт</h3>
-              <span class="tariff__price">3,99 USD</span>
-            </div>
-            <table class="tariff__description">
-              <tr>
-                <td class="tariff__description-item">Розовый фильтр</td>
-                <td class="tariff__description-status--included">Есть</td>
-              </tr>
-              <tr>
-                <td class="tariff__description-item">Смайлики</td>
-                <td class="tariff__description-status--included">Есть</td>
-              </tr>
-              <tr>
-                <td class="tariff__description-item">Комментарии</td>
-                <td class="tariff__description-status--excluded">Нет</td>
-              </tr>
-            </table>
-          </div>
-          <div class="tariff__item slider__item">
-            <div class="tariff__item-title">
-              <h3>Стандарт</h3>
-              <span class="tariff__price">3,99 USD</span>
-            </div>
-            <table class="tariff__description">
-              <tr>
-                <td class="tariff__description-item">Розовый фильтр</td>
-                <td class="tariff__description-status--included">Есть</td>
-              </tr>
-              <tr>
-                <td class="tariff__description-item">Смайлики</td>
-                <td class="tariff__description-status--included">Есть</td>
-              </tr>
-              <tr>
-                <td class="tariff__description-item">Комментарии</td>
-                <td class="tariff__description-status--excluded">Нет</td>
-              </tr>
-            </table>
-          </div>
-          <div class="tariff__item slider__item">
-            <div class="tariff__item-title">
-              <h3>Стандарт</h3>
-              <span class="tariff__price">3,99 USD</span>
-            </div>
-            <table class="tariff__description">
-              <tr>
-                <td class="tariff__description-item">Розовый фильтр</td>
-                <td class="tariff__description-status--included">Есть</td>
-              </tr>
-              <tr>
-                <td class="tariff__description-item">Смайлики</td>
-                <td class="tariff__description-status--included">Есть</td>
-              </tr>
-              <tr>
-                <td class="tariff__description-item">Комментарии</td>
-                <td class="tariff__description-status--excluded">Нет</td>
-              </tr>
-            </table>
-          </div>
+          <table class="tariff__description">
+            <tr>
+              <th class="tariff__title tariff__title--hit" colspan="2">Стандарт <span class="tariff__price">3,99 USD</span></th>
+              <th class="tariff__title" colspan="2">Лайт <span class="tariff__price">2,99 USD</span></th>
+              <th class="tariff__title" colspan="2">Премиум <span class="tariff__price">4,99 USD</span></th>
+            </tr>
+            <tr>
+              <td class="tariff__description-item">Розовый фильтр</td>
+              <td class="tariff__description-status--included">Есть</td>
+              <td class="tariff__description-item">Розовый фильтр</td>
+              <td class="tariff__description-status--included">Есть</td>
+              <td class="tariff__description-item">Розовый фильтр</td>
+              <td class="tariff__description-status--included">Есть</td>
+            </tr>
+            <tr>
+              <td class="tariff__description-item">Смайлики</td>
+              <td class="tariff__description-status--included">Есть</td>
+              <td class="tariff__description-item">Смайлики</td>
+              <td class="tariff__description-status--included">Нет</td>
+              <td class="tariff__description-item">Смайлики</td>
+              <td class="tariff__description-status--included">Есть</td>
+            </tr>
+            <tr>
+              <td class="tariff__description-item">Комментарии</td>
+              <td class="tariff__description-status--excluded">Нет</td>
+              <td class="tariff__description-item">Комментарии</td>
+              <td class="tariff__description-status--excluded">Нет</td>
+              <td class="tariff__description-item">Комментарии</td>
+              <td class="tariff__description-status--excluded">Есть</td>
+            </tr>
+          </table>
         </div>
       </section>
     </main>
@@ -189,15 +174,15 @@
             Остались вопросы? Свяжитесь с нами!
           </p>
           <div class="contacts__wrapper">
-            <b>Звоните:</b>
+            <b>Звоните:</b><br>
             <a href="tel:+7812555666" class="contacts__item contacts__item--marked">+7 (812) 555-66-66</a>
           </div>
           <div class="contacts__wrapper">
-            <b>Пишите:</b>
+            <b>Пишите:</b><br>
             <a href="mailto:mail@htmlacademy.ru" class="contacts__item contacts__item--marked">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__wrapper">
-            <b>Приезжайте в гости:</b>
+            <b>Приезжайте в гости:</b><br>
             <span class="contacts__item contacts__item--marked">
               ул. Большая Конюшенная, 19/8
             </span>

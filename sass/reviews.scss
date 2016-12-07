@@ -1,0 +1,14 @@
+.reviews {
+  &__item {
+    line-height: 30px;
+  }
+  &__wrapper {
+    @include wrapper(280px, 0 20px);
+  }
+  &__user-name {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Open Sans Bold";
+    font-style: normal;
+  }
+}

@@ -1,0 +1,17 @@
+.tariff {
+  background: #f2f2f2;
+  overflow: hidden;
+  &__description {
+    table-layout: fixed;
+    & th {
+      width: 280px;
+      padding: 15px 70px;
+      color: #ffffff;
+      background: #283645;
+    }
+    & td {
+      background: #ffffff;
+    }
+  }
+
+}

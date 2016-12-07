@@ -1,0 +1,22 @@
+.features {
+  padding-top: 40px;
+  &__wrapper {
+    @include wrapper(280px, 0 20px);
+  }
+  &__header p {
+    width: 205px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font-size: 24px;
+    font-family: "Open Sans Light";
+  }
+  &__item-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Open Sans Bold"
+  }
+  &__image {
+    text-align: center;
+  }
+}
