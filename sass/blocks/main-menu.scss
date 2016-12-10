@@ -1,10 +1,9 @@
-@import "mixins.scss";
-
-.main-menu {
-  &__list {
+.main-menu__list {
     @include list-clear();
   }
-  &__item a {
+
+.main-menu__item {
+  a {
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
