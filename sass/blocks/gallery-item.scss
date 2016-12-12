@@ -3,7 +3,7 @@
 }
 
 .gallery__wrapper {
-  @include wrapper(280px, 0 20px);
+  @include wrapper();
 }
 
 .gallery__comment {

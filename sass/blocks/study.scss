@@ -1,0 +1,25 @@
+.study {
+  display: none;
+  @include clearfix();
+}
+
+.study__wrapper {
+  @include wrapper();
+}
+
+.study__image {
+  float: left;
+  width: 240px;
+}
+
+.study__content {
+  float: right;
+  width: 310px;
+  padding-left: 10px;
+}
+
+@media (min-width: 700px) {
+  .study {
+    display: block;
+  }
+}

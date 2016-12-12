@@ -1,9 +1,11 @@
 .reviews__item {
+  display: flex;
+  flex-direction: column;
   line-height: 30px;
 }
 
 .reviews__wrapper {
-    @include wrapper(280px, 0 20px);
+    @include wrapper();
   }
 
 .reviews__user-name {
@@ -11,4 +13,18 @@
   line-height: 30px;
   font-family: "Open Sans Bold";
   font-style: normal;
+}
+
+.reviews__user-description {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .reviews__user-description {
+    display: block;
+  }
+  .reviews__user {
+    order: 1;
+    text-align: center;
+  }
 }

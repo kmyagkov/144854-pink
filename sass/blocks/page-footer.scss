@@ -1,4 +1,21 @@
 .page-footer {
   margin-top: 40px;
   text-align: center;
+  &--mobile {
+    display: none;
+  }
 }
+
+.page-footer__wrapper {
+  @include wrapper();
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 700px) {
+  .page-footer--mobile {
+    display: block;
+  }
+}
+
+
