@@ -62,3 +62,13 @@
     text-align: left;
   }
 }
+
+@media (min-width: 1200px) {
+  .features__list {
+    display: flex;
+    width: 100%;
+  }
+  .features__image {
+    position: inherit;
+  }
+}

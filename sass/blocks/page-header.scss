@@ -6,3 +6,11 @@
 .page-header__wrapper {
   @include wrapper();
 }
+
+@media (min-width: 1200px) {
+  .page-header__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
