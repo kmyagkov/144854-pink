@@ -3,7 +3,9 @@
 }
 
 .gallery__wrapper {
-  @include wrapper();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .gallery__comment {
@@ -11,11 +13,20 @@
   background: #f2f2f2;
 }
 
-.gallery__photo {
+.gallery-item__photo {
   line-height: 0;
+  text-align: center;
 }
 
 .gallery__footer {
   background: #f2f2f2;
 }
 
+@media (min-width: 700px) {
+  .gallery-item {
+    width: 300px;
+    &--panorama {
+      width: 100%;
+    }
+  }
+}

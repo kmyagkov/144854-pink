@@ -7,268 +7,271 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-menu">
-        <button class="main-menu__toggle" type="button">Открыть меню</button>
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a class="main-menu__link"  href="index.html">Главная</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" >Фотографии</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link"  href="form.html">Конкурс</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="logo logo--page-header">
-        <a href="index.html">
-          <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
-        </a>
-      </div>
-      <section class="intro intro--inner-page">
-        <h1 class="intro__title">
-          Фотографии пользователей
-        </h1>
-      </section>
-    </header>
-    <main>
-      <section class="gallery">
-        <h2 class="visually-hidden">
-          Галерея
-        </h2>
-        <p class="gallery__intro">
-          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-        </p>
-        <article class="gallery-item gallery-item--panorama">
-          <div class="gallery-item__photo">
-            <a href="">
-              <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorama">
+      <div class="page-header__wrapper">
+        <div class="page-header__inner">
+          <div class="logo logo--page-header">
+            <a href="index.html">
+              <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
             </a>
           </div>
-          <div class="gallery-item__wrapper">
-            <blockquote class="gallery-item__comment">
-              <header class="gallery-item__header">
-                <cite class="gallery-item__user-name">Анна</cite>
-                <time datetime="">5 минут назад</time>
-              </header>
-              <p>
-                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-              </p>
-            </blockquote>
-            <footer class="gallery-item__footer">
-              <div class="likes">
-                <a class="btn btn--like" href="">Мне нравится</a>
-                Нравится:<span class="gallery-item__likes-count">215</span>
-              </div>
-            </footer>
-          </div>
-        </article>
-        <article class="gallery-item">
-          <div class="gallery-item__wrapper">
+          <nav class="main-menu">
+            <button class="main-menu__toggle" type="button">Открыть меню</button>
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a class="main-menu__link"  href="index.html">Главная</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" >Фотографии</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link"  href="form.html">Конкурс</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <section class="intro intro--inner-page">
+          <h1 class="intro__title">
+            Фотографии пользователей
+          </h1>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <section class="gallery">
+          <h2 class="visually-hidden">
+            Галерея
+          </h2>
+          <p class="gallery__intro">
+            Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+          </p>
+          <article class="gallery-item gallery-item--panorama">
             <div class="gallery-item__photo">
               <a href="">
-                <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo1">
+                <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorama">
               </a>
             </div>
-            <blockquote class="gallery-item__comment">
-              <header class="gallery-item__header">
-                <cite class="gallery-item__user-name">Левон</cite>
-                <time datetime="">5 часов назад</time>
-              </header>
-              <p>
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-            </blockquote>
-            <footer class="gallery-item__footer">
-              <div class="likes">
-                <a class="btn btn--like" href="">Мне нравится</a>
-                Нравится:<span class="gallery-item__likes-count">356</span>
-              </div>
-            </footer>
-          </div>
-        </article>
-        <article class="gallery-item">
-          <div class="gallery-item__wrapper">
-            <div class="gallery-item__photo">
-              <a href="">
-                <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo2">
-              </a>
+            <div class="gallery-item__wrapper">
+              <blockquote class="gallery-item__comment">
+                <header class="gallery-item__header">
+                  <cite class="gallery-item__user-name">Анна</cite>
+                  <time datetime="">5 минут назад</time>
+                </header>
+                <p>
+                  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+              </blockquote>
+              <footer class="gallery-item__footer">
+                <div class="likes">
+                  <button class="likes-btn" href="">Мне нравится</button>
+                  Нравится:<span class="likes__count">215</span>
+                </div>
+              </footer>
             </div>
-            <blockquote class="gallery-item__comment">
-              <header class="gallery-item__header">
-                <cite class="gallery-item__user-name">Антон</cite>
-                <time datetime="">12 часов назад</time>
-              </header>
-              <p>
-                Соседи будут рады!
-              </p>
-            </blockquote>
-            <footer class="gallery-item__footer">
-              <div class="likes">
-                <a class="btn btn--like" href="">Мне нравится</a>
-                Нравится:<span class="gallery-item__likes-count">666</span>
+          </article>
+          <article class="gallery-item">
+            <div class="gallery-item__wrapper">
+              <div class="gallery-item__photo">
+                <a href="">
+                  <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo1">
+                </a>
               </div>
-            </footer>
-          </div>
-        </article>
-        <article class="gallery-item">
-          <div class="gallery-item__wrapper">
-            <div class="gallery-item__photo">
-              <a href="">
-                <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo3">
-              </a>
+              <blockquote class="gallery-item__comment">
+                <header class="gallery-item__header">
+                  <cite class="gallery-item__user-name">Левон</cite>
+                  <time datetime="">5 часов назад</time>
+                </header>
+                <p>
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+              </blockquote>
+              <footer class="gallery-item__footer">
+                <div class="likes">
+                  <button class="likes__btn" href="">Мне нравится</button>
+                  Нравится:<span class="likes__count">356</span>
+                </div>
+              </footer>
             </div>
-            <blockquote class="gallery-item__comment">
-              <header class="gallery-item__header">
-                <cite class="gallery-item__user-name">Борис</cite>
-                <time datetime="">20 часов назад</time>
-              </header>
-              <p>
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-            </blockquote>
-            <footer class="gallery-item__footer">
-              <div class="likes">
-                <a class="btn btn--like" href="">Мне нравится</a>
-                Нравится:<span class="gallery-item__likes-count">215</span>
+          </article>
+          <article class="gallery-item">
+            <div class="gallery-item__wrapper">
+              <div class="gallery-item__photo">
+                <a href="">
+                  <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo2">
+                </a>
               </div>
-            </footer>
-          </div>
-        </article>
-        <article class="gallery-item">
-          <div class="gallery-item__wrapper">
-            <div class="gallery-item__photo">
-              <a href="">
-                <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo4">
-              </a>
+              <blockquote class="gallery-item__comment">
+                <header class="gallery-item__header">
+                  <cite class="gallery-item__user-name">Антон</cite>
+                  <time datetime="">12 часов назад</time>
+                </header>
+                <p>
+                  Соседи будут рады!
+                </p>
+              </blockquote>
+              <footer class="gallery-item__footer">
+                <div class="likes">
+                  <button class="likes__btn" href="">Мне нравится</button>
+                  Нравится:<span class="likes__count">666</span>
+                </div>
+              </footer>
             </div>
-            <blockquote class="gallery-item__comment">
-              <header class="gallery-item__header">
-                <cite class="gallery-item__user-name">Сергей</cite>
-                <time datetime="">25 часов назад</time>
-              </header>
-              <p>
-                Самая кубанская в мире!
-              </p>
-            </blockquote>
-            <footer class="gallery-item__footer">
-              <div class="likes">
-                <a class="btn btn--like" href="">Мне нравится</a>
-                Нравится:<span class="gallery-item__likes-count">4</span>
+          </article>
+          <article class="gallery-item">
+            <div class="gallery-item__wrapper">
+              <div class="gallery-item__photo">
+                <a href="">
+                  <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo3">
+                </a>
               </div>
-            </footer>
-          </div>
-        </article>
-        <article class="gallery-item">
-          <div class="gallery-item__wrapper">
-            <div class="gallery-item__photo">
-              <a href="">
-                <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo5">
-              </a>
+              <blockquote class="gallery-item__comment">
+                <header class="gallery-item__header">
+                  <cite class="gallery-item__user-name">Борис</cite>
+                  <time datetime="">20 часов назад</time>
+                </header>
+                <p>
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+              </blockquote>
+              <footer class="gallery-item__footer">
+                <div class="likes">
+                  <button class="likes__btn" href="">Мне нравится</button>
+                    Нравится:<span class="likes__count">215</span>
+                </div>
+              </footer>
             </div>
-            <blockquote class="gallery-item__comment">
-              <header class="gallery-item__header">
-                <cite class="gallery-item__user-name">Максим</cite>
-                <time datetime="">40 часов назад</time>
-              </header>
-              <p>
-                Где снег-то?
-              </p>
-            </blockquote>
-            <footer class="gallery-item__footer">
-              <div class="likes">
-                <a class="btn btn--like" href="">Мне нравится</a>
-                Нравится:<span class="gallery-item__likes-count">150</span>
+          </article>
+          <article class="gallery-item">
+            <div class="gallery-item__wrapper">
+              <div class="gallery-item__photo">
+                <a href="">
+                  <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo4">
+                </a>
+            </div>
+              <blockquote class="gallery-item__comment">
+                <header class="gallery-item__header">
+                  <cite class="gallery-item__user-name">Сергей</cite>
+                  <time datetime="">25 часов назад</time>
+                </header>
+                <p>
+                  Самая кубанская в мире!
+                </p>
+              </blockquote>
+              <footer class="gallery-item__footer">
+                <div class="likes">
+                  <button class="likes__btn" href="">Мне нравится</button>
+                  Нравится:<span class="likes__count">4</span>
+                </div>
+              </footer>
+            </div>
+          </article>
+          <article class="gallery-item">
+            <div class="gallery-item__wrapper">
+              <div class="gallery-item__photo">
+                <a href="">
+                  <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo5">
+                </a>
               </div>
-            </footer>
-          </div>
-        </article>
-        <article class="gallery-item">
-          <div class="gallery-item__wrapper">
-            <div class="gallery-item__photo">
-              <a href="">
-                <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo6">
-              </a>
+              <blockquote class="gallery-item__comment">
+                <header class="gallery-item__header">
+                  <cite class="gallery-item__user-name">Максим</cite>
+                  <time datetime="">40 часов назад</time>
+                </header>
+                <p>
+                  Где снег-то?
+                </p>
+              </blockquote>
+              <footer class="gallery-item__footer">
+                <div class="likes">
+                  <button class="likes__btn" href="">Мне нравится</button>
+                  Нравится:<span class="likes__count">150</span>
+                </div>
+              </footer>
             </div>
-            <blockquote class="gallery-item__comment">
-              <header class="gallery-item__header">
-                <cite class="gallery-item__user-name">Надежда</cite>
-                <time datetime="">45 часов назад</time>
-              </header>
-              <p>
-                Всем GM и взаимные лайки!
-              </p>
-            </blockquote>
-            <footer class="gallery-item__footer">
-              <div class="likes">
-                <a class="btn btn--like" href="">Мне нравится</a>
-                Нравится:<span class="gallery-item__likes-count">2560</span>
+          </article>
+          <article class="gallery-item">
+            <div class="gallery-item__wrapper">
+              <div class="gallery-item__photo">
+                <a href="">
+                  <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo6">
+                </a>
               </div>
-            </footer>
-          </div>
-        </article>
-      </section>
-      <section class="photo-post">
-        <p class="photo-post__intro">
-          Затмите их всех!
-        </p>
-        <p class="photo-post__intro">
-          Выкладывайте все, что накопилось в телефоне!
-        </p>
-        <form class="form form--photo-post" action="" method="">
-          <div class="form__wrapper">
-            <div class="form__image">
-              <img src="img/photo-7-mobile@1x.jpg" width="280" height="180" alt="photo7">
+              <blockquote class="gallery-item__comment">
+                <header class="gallery-item__header">
+                  <cite class="gallery-item__user-name">Надежда</cite>
+                  <time datetime="">45 часов назад</time>
+                </header>
+                <p>
+                  Всем GM и взаимные лайки!
+                </p>
+              </blockquote>
+              <footer class="gallery-item__footer">
+                <div class="likes">
+                  <a class="likes__btn" href="">Мне нравится</a>
+                  Нравится:<span class="likes__count">2560</span>
+                </div>
+              </footer>
             </div>
-            <div class="form__photo-correct">
-              <ul>
-                <li>
-                  <input type="radio" name="photo-correct" value="crop-value" id="crop-value-label">
-                  <label for="crop-value-label">Обрезка</label>
-                  <div class="form__photo-correct-controls">
-                    <div clalass="form__photo-correct-scale">
-                      <div class="form__photo-correct-bar">
+          </article>
+        </section>
+        <section class="photo-post">
+          <div class="photo-post__wrapper">
+            <p class="photo-post__intro">
+              Затмите их всех!
+            </p>
+            <p class="photo-post__intro">
+              Выкладывайте все, что накопилось в телефоне!
+            </p>
+            <div class="photo-post__interface">
+              <div class="photo-post__image">
+                <img src="img/photo-7-mobile@1x.jpg" width="280" height="180" alt="photo7">
+              </div>
+              <div class="photo-post__photo-correct">
+                <ul>
+                  <li>
+                    Обрезка
+                    <div class="photo-post__photo-correct-controls">
+                      <div clalass="photo-post__photo-correct-scale">
+                        <div class="photo-post__photo-correct-bar">
+                        </div>
+                      </div>
+                      <div class="photo-post__photo-correct-toggle">
+                      </div>
+                   </div>
+                  </li>
+                  <li>
+                    Заливка
+                    <div class="photo-post__photo-correct-controls">
+                      <div clalass="photo-post__photo-correct-scale">
+                        <div class="photo-post__photo-correct-bar">
+                        </div>
+                      </div>
+                      <div class="photo-post__photo-correct-toggle">
                       </div>
                     </div>
-                    <div class="form__photo-correct-toggle">
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <input type="radio" name="photo-correct" value="fill-value" id="fill-value-label">
-                  <label for="fill-value-label">Заливка</label>
-                  <div class="form__photo-correct-controls">
-                    <div clalass="form__photo-correct-scale">
-                      <div class="form__photo-correct-bar">
+                  </li>
+                  <li>
+                    Контрастность
+                    <div class="photo-post__photo-correct-controls">
+                      <div clalass="photo-post__photo-correct-scale">
+                        <div class="photo-post__photo-correct-bar">
+                        </div>
                       </div>
-                    </div>
-                    <div class="form__photo-correct-toggle">
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <input type="radio" name="photo-correct" value="contrast-value" id="contrast-value-label">
-                  <label for="contrast-value-label">Контрастность</label>
-                  <div class="form__photo-correct-controls">
-                    <div clalass="form__photo-correct-scale">
-                      <div class="form__photo-correct-bar">
-                      </div>
-                    </div>
-                    <div class="form__photo-correct-toggle">
+                      <div class="photo-post__photo-correct-toggle">
                     </div>
                   </div>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <button class="btn btn--post" type="submit">Запостить</button>
           <button class="btn btn--cancel" type="reset">Отмена</button>
-        </form>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
