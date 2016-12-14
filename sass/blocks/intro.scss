@@ -2,6 +2,7 @@
   position: relative;
   height: 462px;
   background: #2c3949 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
+  border-top: 1px solid #000000;
   &--inner-page {
     height: 235px;
     padding-top: 25px;
@@ -21,6 +22,21 @@
 .intro__image {
   position: absolute;
   bottom: 0;
-  margin-top: auto;
   line-height: 0;
+}
+
+@media (min-width: 700px) {
+  .intro {
+    height: 730px;
+  }
+  .intro__image {
+    right: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    height: 853px;
+    border: none;
+  }
 }

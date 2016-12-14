@@ -1,10 +1,19 @@
 .study {
   display: none;
   @include clearfix();
+  padding-top: 90px;
 }
 
 .study__wrapper {
   @include wrapper();
+}
+
+.study__header {
+  width: 170px;
+  font-family: $bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
 }
 
 .study__image {
@@ -16,6 +25,11 @@
   float: right;
   width: 310px;
   padding-left: 10px;
+}
+
+.study__learn-more {
+  font-family: $regular;
+  color: #d22856;
 }
 
 @media (min-width: 700px) {

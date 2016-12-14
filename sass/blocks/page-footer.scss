@@ -12,10 +12,22 @@
   justify-content: space-between;
 }
 
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  padding-top: 10px;
+}
+
 @media (min-width: 700px) {
   .page-footer--mobile {
     display: block;
   }
 }
 
-
+@media (min-width: 1200px) {
+  .page-footer__copyright {
+    width: 150px;
+    font-size: 18px;
+  }
+}

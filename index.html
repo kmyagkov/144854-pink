@@ -13,7 +13,7 @@
             <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
           </div>
           <nav class="main-menu">
-            <button class="main-menu__toggle" type="button">Открыть меню</button>
+            <button class="main-menu__toggle main-menu__toggle--close" type="button">Открыть меню</button>
             <ul class="main-menu__list">
               <li class="main-menu__item">
                 <a class="main-menu__link">Главная</a>
@@ -39,20 +39,21 @@
           </div>
         </section>
         <section class="download">
-          <div class="page-header__wrapper">
-            <h2 class="visually-hidden">
-              Скачать приложение
-            </h2>
-            <a class="btn" href="">Скачать приложение</a>
-            <div class="download__links-list">
-              <a class="download-link download-link--ios" href="">Скачать в App Store</a>
-              <a class="download-link download-link--android" href="">Скачать в Google Play</a>
-              <a class="download-link download-link--windows" href="">Скачать в Windows Store</a>
-            </div>
-            <p class="download__description">
-              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-            </p>
+          <h2 class="visually-hidden">
+            Скачать приложение
+          </h2>
+          <p class="download__intro">
+            Взгляните на жизнь иначе!
+          </p>
+          <a class="btn btn--download" href="">Скачать приложение</a>
+          <div class="download__links-list">
+            <a class="download-link download-link--ios" href="">Скачать в App Store</a>
+            <a class="download-link download-link--android" href="">Скачать в Google Play</a>
+            <a class="download-link download-link--windows" href="">Скачать в Windows Store</a>
           </div>
+          <p class="download__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
         </section>
       </div>
     </header>
@@ -67,8 +68,8 @@
             Нам есть, что вам предложить!
           </p>
         </div>
-        <div class="features__wrapper">
-          <div class="features__list">
+        <div class="features__list">
+          <div class="features__wrapper">
             <section class="features__item">
               <h3 class="features__item-title">
                 Поднимает настроение
@@ -76,6 +77,9 @@
               <p>
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
+              <div class="features__image features__image--hidden">
+                <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="iphone screen">
+              </div>
             </section>
             <section class="features__item">
               <h3 class="features__item-title">
@@ -84,6 +88,9 @@
               <p>
                 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
               </p>
+              <div class="features__image features__image--hidden">
+                <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="iphone screen">
+              </div>
             </section>
             <section class="features__item">
               <h3 class="features__item-title">
@@ -98,7 +105,6 @@
             </section>
           </div>
         </div>
-        </section>
       </section>
       <section class="study">
         <div class="study__wrapper">
@@ -111,7 +117,7 @@
             <p>
                 Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
             </p>
-            <a href="">Узнать больше об исследовании</a>
+            <a class="study__learn-more" href="">Узнать больше об исследовании</a>
           </section>
         </div>
       </section>
@@ -121,10 +127,10 @@
         </h2>
         <div class="reviews__wrapper">
           <div class="reviews__list slider">
-            <input class="slider__input" type="radio" name="reviews" id="reviews-input-1 checked">
-            <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
-            <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
-            <blockquote class="reviews__item slider__item">
+            <input class="slider__input1" type="radio" name="reviews" id="reviews-input-1" checked>
+            <input class="slider__input2" type="radio" name="reviews" id="reviews-input-2">
+            <input class="slider__input3" type="radio" name="reviews" id="reviews-input-3">
+            <blockquote class="reviews__item slider__item1">
               <div class="reviews__user">
                 <cite class="reviews__user-name">Николай Петров</cite>
                 <span class="reviews__user-description">25 лет, водитель трамвая</span>
@@ -133,22 +139,22 @@
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item2">
               <div class="reviews__user">
-                <cite class="reviews__user-name">Николай Петров</cite>
+                <cite class="reviews__user-name">Петр Николаев</cite>
                 <span class="reviews__user-description">25 лет, водитель трамвая</span>
               </div>
               <p>
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item3">
               <div class="reviews__user">
-                <cite class="reviews__user-name">Николай Петров</cite>
+                <cite class="reviews__user-name">Мастер Йода</cite>
                 <span class="reviews__user-description">25 лет, водитель трамвая</span>
               </div>
               <p>
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                «Да прибудет с вами сила!»
               </p>
             </blockquote>
           </div>
@@ -209,6 +215,8 @@
           </div>
         </div>
       </section>
+      <div class="map">
+      </div>
     </main>
     <footer class="page-footer page-footer--mobile">
       <div class="page-footer__wrapper">
@@ -223,16 +231,14 @@
           <a class="social-link social-link--youtube" href="">Youtube</a>
         </section>
         <section class="page-footer__copyright">
-          <span>Разработано:</span>
+          <span>Разработано</span>
           <div class="page-footer__logo">
             <a href="https://htmlacademy.ru/">
-              <img src="img/htmlacademy.svg" width="168" height="213" alt="HTML Academy">
+              <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
             </a>
           </div>
         </section>
       </div>
     </footer>
-    <div class="map">
-    </div>
   </body>
 </html>
