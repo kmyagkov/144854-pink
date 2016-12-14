@@ -1,0 +1,37 @@
+.main-menu {
+  background: #283645;
+}
+
+.main-menu__list {
+    @include list-clear();
+  }
+
+.main-menu__item {
+  text-align: center;
+}
+
+.main-menu__link {
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .main-menu {
+    background: none;
+  }
+  .main-menu__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-menu__toggle {
+    display: none;
+  }
+  .main-menu__item {
+    margin-right: 50px;
+  }
+  .main-menu__item:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,15 @@
+.logo {
+  &--page-header {
+    img {
+      width: 75px;
+      height: 25px;
+    }
+  }
+  &--page-footer {
+    margin-bottom: 40px;
+    img {
+      width: 147px;
+      height: 40px;
+    }
+  }
+}

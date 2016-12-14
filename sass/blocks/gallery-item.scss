@@ -1,0 +1,32 @@
+.gallery-item {
+  margin-bottom: 20px;
+}
+
+.gallery__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallery__comment {
+  padding: 15px;
+  background: #f2f2f2;
+}
+
+.gallery-item__photo {
+  line-height: 0;
+  text-align: center;
+}
+
+.gallery__footer {
+  background: #f2f2f2;
+}
+
+@media (min-width: 700px) {
+  .gallery-item {
+    width: 300px;
+    &--panorama {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 30px;
+  p {
+    text-align: center;
+  }
+}
+
+.reviews__wrapper {
+    @include wrapper();
+  }
+
+.reviews__user {
+  text-align: center;
+}
+
+.reviews__user-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans Bold";
+  font-style: normal;
+}
+
+.reviews__user-description {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .reviews__user-description {
+    display: block;
+  }
+  .reviews__user {
+    order: 1;
+    text-align: center;
+  }
+}

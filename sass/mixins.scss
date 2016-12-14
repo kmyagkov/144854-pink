@@ -1,10 +1,24 @@
-@mixin wrapper($wrapper-width, $wrapper-padding) {
-  width: $wrapper-width;
-  padding: $wrapper-padding;
+@mixin wrapper() {
+  width: 320px;
+  margin: 0 auto;
+  @media (min-width: 700px) {
+    width: 640px;
+  }
+  @media (min-width: 1200px) {
+    width: 960px;
+  }
 }
 
 @mixin list-clear() {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
