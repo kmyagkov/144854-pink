@@ -3,12 +3,12 @@
   height: 60px;
   font-size: 0;
   &--ios {
-    background: url(../../img/logo-apple.svg) no-repeat 50% 50%;
+    background: url(../img/logo-apple.svg) no-repeat 50% 50%;
   }
   &--android {
-    background: url(../../img/logo-android.svg) no-repeat 50% 50%;
+    background: url(../img/logo-android.svg) no-repeat 50% 50%;
   }
   &--windows {
-    background: url(../../img/logo-microsoft.svg) no-repeat 50% 50%;
+    background: url(../img/logo-microsoft.svg) no-repeat 50% 50%;
   }
 }
