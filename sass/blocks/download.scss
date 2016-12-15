@@ -1,6 +1,10 @@
 .download {
-  padding: 28px 20px 30px 20px;
   background: #1d2631;
+  padding: 28px 0 28px 0;
+}
+
+.download__wrapper {
+  @include wrapper();
 }
 
 .download__intro {
@@ -31,15 +35,19 @@
 
 @media (min-width: 700px) {
   .download {
-    position: absolute;
-    left: 0;
-    bottom: 100px;
     width: 305px;
     padding-bottom: 0;
     background: none;
   }
+  .download__wrapper {
+    width: 300px;
+  }
   .download__intro {
     display: block;
+  }
+  .download__description {
+    width: 100%;
+    font-size: 18px;
   }
 }
 

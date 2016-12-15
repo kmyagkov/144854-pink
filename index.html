@@ -7,53 +7,55 @@
   </head>
   <body>
     <header class="page-header">
+      <h1 class="visually-hidden">
+        Мобильное приложение PINK
+      </h1>
       <div class="page-header__wrapper">
         <div class="page-header__inner">
           <div class="logo logo--page-header">
             <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
           </div>
           <nav class="main-menu">
-            <button class="main-menu__toggle main-menu__toggle--close" type="button">Открыть меню</button>
-            <ul class="main-menu__list">
-              <li class="main-menu__item">
-                <a class="main-menu__link">Главная</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
+            <button class="main-menu__toggle" type="button">Открыть меню</button>
+            <div class="main-menu__burger-popup">
+              <button class="main-menu__close" type="button">Закрыть меню</button>
+              <ul class="main-menu__list">
+                <li class="main-menu__item">
+                  <a class="main-menu__link">Главная</a>
+                </li>
+                <li class="main-menu__item">
+                  <a class="main-menu__link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="main-menu__item">
+                  <a class="main-menu__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="main-menu__item">
+                  <a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
-        <section class="intro">
-          <h1 class="visually-hidden">
-            Мобильное приложение PINK
-          </h1>
-          <div class="intro__image">
-            <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="iphone">
-          </div>
-        </section>
+      </div>
+      <div class="page-header__wrapper page-header__wrapper--download">
         <section class="download">
-          <h2 class="visually-hidden">
-            Скачать приложение
-          </h2>
-          <p class="download__intro">
-            Взгляните на жизнь иначе!
-          </p>
-          <a class="btn btn--download" href="">Скачать приложение</a>
-          <div class="download__links-list">
-            <a class="download-link download-link--ios" href="">Скачать в App Store</a>
-            <a class="download-link download-link--android" href="">Скачать в Google Play</a>
-            <a class="download-link download-link--windows" href="">Скачать в Windows Store</a>
+          <div class="download__wrapper">
+            <h2 class="visually-hidden">
+              Скачать приложение
+            </h2>
+            <p class="download__intro">
+              Взгляните на жизнь иначе!
+            </p>
+            <a class="btn btn--download" href="">Скачать приложение</a>
+            <div class="download__links-list">
+              <a class="download-link download-link--ios" href="">Скачать в App Store</a>
+              <a class="download-link download-link--android" href="">Скачать в Google Play</a>
+              <a class="download-link download-link--windows" href="">Скачать в Windows Store</a>
+            </div>
+            <p class="download__description">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
           </div>
-          <p class="download__description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
         </section>
       </div>
     </header>
@@ -161,13 +163,13 @@
         </div>
       </section>
       <section class="tariff">
-        <div class="tariff__wrapper slider">
+        <div class="tariff__wrapper slider--tariff">
           <h2 class="visually-hidden">
             Наши цены
           </h2>
-          <input class="slider__input" type="radio" name="tariff" id="tariff-input-1">
-          <input class="slider__input" type="radio" name="tariff" id="tariff-input-2 checked">
-          <input class="slider__input" type="radio" name="tariff" id="tariff-input-3">
+          <input class="slider__input1" type="radio" name="tariff" id="tariff-input-1">
+          <input class="slider__input2" type="radio" name="tariff" id="tariff-input-2" checked>
+          <input class="slider__input3" type="radio" name="tariff" id="tariff-input-3">
           <table class="tariff__description">
             <tr>
               <th class="tariff__title">База <span class="tariff__price">1,99 USD</span></th>
@@ -240,5 +242,6 @@
         </section>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

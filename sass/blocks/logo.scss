@@ -1,5 +1,8 @@
 .logo {
   &--page-header {
+    position: relative;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
     img {
       width: 75px;
       height: 25px;
@@ -10,6 +13,15 @@
     img {
       width: 147px;
       height: 40px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    &--page-header {
+      width: auto;
+      background: none;
     }
   }
 }

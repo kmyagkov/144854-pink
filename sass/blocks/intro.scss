@@ -1,14 +1,3 @@
-.intro {
-  position: relative;
-  height: 462px;
-  background: #2c3949 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
-  border-top: 1px solid #000000;
-  &--inner-page {
-    height: 235px;
-    padding-top: 25px;
-  }
-}
-
 .intro__title {
   width: 240px;
   margin: 0 auto;
@@ -16,27 +5,13 @@
   font-size: 24px;
   font-weight: normal;
   line-height: 40px;
-  font-family: "Open Sans Light";
-}
-
-.intro__image {
-  position: absolute;
-  bottom: 0;
-  line-height: 0;
+  font-family: $light;
 }
 
 @media (min-width: 700px) {
-  .intro {
-    height: 730px;
-  }
-  .intro__image {
-    right: 40px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .intro {
-    height: 853px;
-    border: none;
+  .intro__title {
+    width: 370px;
+    font-size: 50px;
+    line-height: 58px;
   }
 }
