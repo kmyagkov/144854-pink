@@ -1,3 +1,7 @@
+.photo-post__wrapper {
+  @include wrapper();
+}
+
 .photo-post__intro {
   line-height: 30px;
   text-align: center;

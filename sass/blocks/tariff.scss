@@ -1,12 +1,15 @@
 .tariff {
-  background: #f2f2f2;
+  padding-top: 130px;
+  background: #f2f2f2 url(../img/bg-triangle-white.svg) no-repeat;
+  background-size: contain;
   overflow: hidden;
 }
 
 .tariff__description {
+  position: relative;
+  width: 1000px;
   & th {
     width: 280px;
-    padding: 15px 70px;
     color: #ffffff;
     background: #283645;
   }
@@ -14,4 +17,3 @@
     background: #ffffff;
   }
 }
-
