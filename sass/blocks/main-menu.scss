@@ -1,16 +1,16 @@
-.main-menu__list {
-  @include list-clear();
-  background: #283645;
+.main-menu {
+  position: relative;
 }
 
-.main-menu__burger-popup {
+.main-menu__list {
+  @include list-clear();
   display: none;
   background: #283645;
   &--open {
     display: block;
     position: absolute;
-    top: 50px;
     width: 100%;
+    top: 0;
   }
 }
 
@@ -36,11 +36,27 @@
 
 .main-menu__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -45px;
+  right: 20px;
+  width: 50px;
+  height: 25px;
+  font-size: 0;
+  border: none;
+  background: url(../img/icon-menu-burger.svg) no-repeat;
+  cursor: pointer;
+  &--close {
+    background: url(../img/icon-menu-cross.svg) no-repeat right;
+  }
 }
 
-@media (min-width: 1200px) {
+@media ($tablet) {
+  .main-menu__toggle {
+    top: -60px;
+    right: 40px;
+  }
+}
+
+@media ($desktop) {
   .main-menu {
     background: none;
   }
@@ -54,8 +70,10 @@
     flex-wrap: nowrap;
     background: none;
   }
-  .main-menu__toggle,
-  .main-menu__close {
+  .main-menu__link {
+    padding: 0;
+  }
+  .main-menu__toggle {
     display: none;
   }
   .main-menu__item {

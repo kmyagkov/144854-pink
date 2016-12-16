@@ -14,8 +14,8 @@
 }
 
 .reviews__wrapper {
-    @include wrapper();
-  }
+  @include wrapper();
+}
 
 .reviews__user {
   text-align: center;
@@ -34,7 +34,7 @@
 }
 
 @media (min-width: 700px) {
-  .reviews__item{
+  .reviews__item {
     p {
       font-size: 18px;
       line-height: 30px;

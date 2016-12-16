@@ -9,9 +9,17 @@
     left: 20px;
   }
   .slider__input2:checked ~ .tariff__description {
-    left: -310px;
+    left: -260px;
   }
   .slider__input3:checked ~ .tariff__description {
-    left: -645px;
+    left: -540px;
+  }
+}
+
+@media ($tablet) {
+  .slider--tariff {
+    input[class^="slider"] {
+      display: none;
+    }
   }
 }

@@ -2,7 +2,10 @@
   &--page-header {
     position: relative;
     width: 100%;
+    padding: 20px;
+    padding-bottom: 14px;
     background: rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
     img {
       width: 75px;
       height: 25px;
@@ -17,11 +20,25 @@
   }
 }
 
-@media (min-width: 1200px) {
+.logo--no-transparent {
+  background: #283645;
+}
+
+@media ($tablet) {
+  .logo {
+    &--page-header {
+      padding: 40px;
+      padding-top: 25px;
+    }
+  }
+}
+
+@media ($desktop) {
   .logo {
     &--page-header {
       width: auto;
       background: none;
+      padding: 0;
     }
   }
 }

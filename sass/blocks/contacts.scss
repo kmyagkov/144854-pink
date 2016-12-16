@@ -26,9 +26,10 @@
   margin: 0 auto;
   margin-bottom: 20px;
   text-align: center;
-  b {
+  p {
+    margin: 0;
     font-size: 18px;
-    font-family: "Open Sans Bold";
+    font-family: $bold;
     text-align: center;
   }
 }
@@ -38,11 +39,11 @@
     text-decoration: none;
     font-size: 24px;
     color: #d22856;
-    font-family: "Open Sans Light";
+    font-family: $light;
   }
 }
 
-@media (min-width: 700px) {
+@media ($tablet) {
   .contacts__header {
     width: 400px;
     font-size: 40px;
@@ -50,10 +51,15 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media ($desktop) {
   .contacts__header {
     width: 470px;
     font-size: 50px;
     line-height: 58px;
+  }
+  .contacts__inner{
+    p {
+      margin-bottom: 25px;
+    }
   }
 }
