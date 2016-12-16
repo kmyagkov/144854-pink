@@ -1,5 +1,24 @@
 .gallery-item {
+  position: relative;
   margin-bottom: 20px;
+  &--panorama {
+    &::before {
+      position: absolute;
+      content: "Панорама дня";
+      top: 0;
+      right: 20px;
+      width: 140px;
+      height: 24px;
+      paddin-top: 12px;
+      font-family: $bold;
+      font-size: 12px;
+      line-height: 24px;
+      text-transform: uppercase;
+      text-align: center;
+      background: #d22856;
+      color: #ffffff;
+    }
+  }
 }
 
 .gallery-item__wrapper {
@@ -11,6 +30,7 @@
 }
 
 .gallery-item__comment {
+  margin: 0;
   padding: 15px;
   background: #f2f2f2;
 }
@@ -20,11 +40,28 @@
   text-align: center;
 }
 
-.gallery-item__footer {
-  margin-top: auto;
+.gallery-item__user-name {
+  font-family: $bold;
+  font-style: normal;
 }
 
-@media (min-width: 700px) {
+.gallery-item__post-time {
+  font-family: $light;
+  font-size: 12px;
+  &::before {
+    content: "(";
+  }
+    &::after {
+    content: ")";
+  }
+}
+
+.gallery-item__footer {
+  margin-top: auto;
+  background: #f2f2f2;
+}
+
+@media ($tablet) {
   .gallery-item__wrapper {
     width: 300px;
     min-height: 450px;
@@ -47,7 +84,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media ($desktop) {
   .gallery-item {
     &--layout {
       &:nth-child(even) {

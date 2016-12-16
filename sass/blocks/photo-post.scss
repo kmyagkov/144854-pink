@@ -12,7 +12,39 @@
   flex-direction: column;
 }
 
-@media (min-width: 700px) {
+.photo-post__tabs-list {
+  @include list-clear();
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 35px 0 35px;
+}
+
+.photo-post__tab-input {
+  display: none;
+}
+
+.photo-post__tab-label {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.photo-post__photo-correct-controls {
+  display:  none;
+}
+
+.photo-post__tab-input:checked + .photo-post__tab-label {
+  background: red;
+}
+
+.photo-post__tab-input:checked ~ .photo-post__photo-correct-controls {
+  display: block;
+}
+
+@media ($tablet) {
   .photo-post__interface {
     flex-direction: row;
     justify-content: space-between;
