@@ -36,9 +36,11 @@
 @media ($desktop) {
   .logo {
     &--page-header {
-      width: auto;
-      background: none;
+      float: left;
+      width: 160px;
       padding: 0;
+      margin-right: 170px;
+      background: none;
     }
   }
 }

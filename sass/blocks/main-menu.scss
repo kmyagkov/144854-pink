@@ -1,16 +1,15 @@
 .main-menu {
   position: relative;
+  margin-bottom: -70px;
 }
 
 .main-menu__list {
   @include list-clear();
   display: none;
   background: #283645;
+  border-bottom: 1px solid #000000;
   &--open {
     display: block;
-    position: absolute;
-    width: 100%;
-    top: 0;
   }
 }
 
@@ -50,6 +49,9 @@
 }
 
 @media ($tablet) {
+  .main-menu {
+    margin-bottom: -100px;
+  }
   .main-menu__toggle {
     top: -60px;
     right: 40px;
@@ -58,20 +60,20 @@
 
 @media ($desktop) {
   .main-menu {
-    background: none;
-  }
-  .main-menu__burger-popup {
-    display: block;
-    background: none;
+    margin: none;
   }
   .main-menu__list {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     flex-wrap: nowrap;
     background: none;
+    border: none;
   }
   .main-menu__link {
     padding: 0;
+    font-family: $regular;
+    line-height: 18px;
   }
   .main-menu__toggle {
     display: none;

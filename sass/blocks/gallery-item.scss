@@ -27,6 +27,11 @@
   flex-direction: column;
   justify-content: flex-start;
   background: #f2f2f2;
+  &--panorama {
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+  }
 }
 
 .gallery-item__comment {

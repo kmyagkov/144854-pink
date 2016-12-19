@@ -1,3 +1,9 @@
+.intro {
+  padding-top: 95px;
+  padding-bottom: 80px;
+  background: #2c3949 url("../img/bg-back-mobile@1x.jpg") no-repeat top center;
+}
+
 .intro__title {
   width: 240px;
   margin: 0 auto;
@@ -8,10 +14,22 @@
   font-family: $light;
 }
 
-@media (min-width: 700px) {
+@media ($tablet) {
+  .intro {
+    padding-top: 185px;
+    padding-bottom: 140px;
+    background: #2c3949 url("../img/bg-back-tablet@1x.jpg") no-repeat top center;
+  }
   .intro__title {
     width: 370px;
     font-size: 50px;
     line-height: 58px;
+  }
+}
+
+@media ($desktop) {
+  .intro {
+    padding-top: 180px;
+    padding-bottom: 105px;
   }
 }

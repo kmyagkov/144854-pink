@@ -1,7 +1,42 @@
+.slider {
+  position: relative;
+}
+
+.slider__input1,
+.slider__input2,
+.slider__input3 {
+  display: none;
+}
+
 .slider__input1:checked ~ .slider__item1,
 .slider__input2:checked ~ .slider__item2,
 .slider__input3:checked ~ .slider__item3 {
   display: flex;
+}
+
+.slider__controls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 65px;
+  height: 12px;
+  left: 50%;
+  bottom: -20px;
+  margin-left: -32px;
+  z-index: 10;
+}
+
+.slider__label1,
+.slider__label2,
+.slider__label3 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #b5b9be;
+  border: 2px solid #ffffff;
+  cursor: pointer;
 }
 
 .slider--tariff {
@@ -14,11 +49,31 @@
   .slider__input3:checked ~ .tariff__description {
     left: -540px;
   }
+  .slider__label1,
+  .slider__label2,
+  .slider__label3 {
+    border: 2px solid #f2f2f2;
+  }
+  .slider__controls {
+    bottom: -40px;
+  }
+}
+
+
+
+.slider__input1:checked ~ .slider__controls .slider__label1,
+.slider__input2:checked ~ .slider__controls .slider__label2,
+.slider__input3:checked ~ .slider__controls .slider__label3 {
+  background: none;
+  border: 2px solid #283645;
 }
 
 @media ($tablet) {
   .slider--tariff {
     input[class^="slider"] {
+      display: none;
+    }
+    .slider__controls {
       display: none;
     }
   }

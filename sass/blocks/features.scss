@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-width: 700px) {
+@media ($tablet) {
   .features__header {
     p {
       width: 350px;
@@ -80,7 +80,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media ($desktop) {
   .features__wrapper {
     float: none;
     width: 940px;

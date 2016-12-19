@@ -1,10 +1,6 @@
 .download {
   background: #1d2631;
-  padding: 28px 0 28px 0;
-}
-
-.download__wrapper {
-  @include wrapper();
+  padding: 28px 20px 28px 20px;
 }
 
 .download__intro {
@@ -33,10 +29,10 @@
   text-align: center;
 }
 
-@media (min-width: 700px) {
+@media ($tablet) {
   .download {
     width: 305px;
-    padding-bottom: 0;
+    padding: 0px 0px 100px 40px;
     background: none;
   }
   .download__wrapper {
@@ -51,10 +47,7 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .download {
-    bottom: 120px;
-  }
+@media ($desktop) {
   .download__intro {
     width: 250px;
     font-size: 50px;

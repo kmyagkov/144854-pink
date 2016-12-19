@@ -12,12 +12,13 @@
   line-height: 30px;
 }
 
-@media (min-width: 700px) {
+@media ($tablet) {
   .gallery__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
   }
   .gallery__intro {
     width: 460px;
+    font-size: 18px;
   }
 }

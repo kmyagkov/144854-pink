@@ -7,32 +7,30 @@
   </head>
   <body>
     <div class="container">
-      <header class="page-header page-header--inside">
-        <div class="page-header__wrapper">
-          <div class="page-header__inner">
-            <div class="logo logo--page-header">
-              <a href="index.html">
-                <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
-              </a>
-            </div>
-            <nav class="main-menu">
-              <button class="main-menu__toggle" type="button">Открыть меню</button>
-              <ul class="main-menu__list">
-                <li class="main-menu__item">
-                  <a class="main-menu__link"  href="index.html">Главная</a>
-                </li>
-                <li class="main-menu__item">
-                  <a class="main-menu__link" >Фотографии</a>
-                </li>
-                <li class="main-menu__item">
-                  <a class="main-menu__link"  href="form.html">Конкурс</a>
-                </li>
-                <li class="main-menu__item">
-                  <a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
-                </li>
-              </ul>
-            </nav>
+      <header class="page-header">
+        <div class="page-header__wrapper page-header__wrapper--bg">
+          <div class="logo logo--page-header">
+            <a href="index.html">
+             <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
+            </a>
           </div>
+          <nav class="main-menu">
+            <button class="main-menu__toggle" type="button">Открыть меню</button>
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a class="main-menu__link"  href="index.html">Главная</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" >Фотографии</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link"  href="form.html">Конкурс</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <section class="intro">
           <h1 class="intro__title">
@@ -65,9 +63,9 @@
                 </p>
               </blockquote>
               <footer class="gallery-item__footer">
-                <div class="likes">
+                <div class="likes likes--panorama">
                   <button type="button" class="likes__btn">Мне нравится</button>
-                  Нравится:<span class="likes__count">215</span>
+                  <span class="likes__count">Нравится: 215</span>
                 </div>
               </footer>
             </div>
@@ -92,7 +90,7 @@
                 <footer class="gallery-item__footer">
                   <div class="likes">
                     <button type="button" class="likes__btn">Мне нравится</button>
-                    Нравится:<span class="likes__count">356</span>
+                    <span class="likes__count">Нравится: 356</span>
                   </div>
                 </footer>
               </div>
@@ -116,7 +114,7 @@
                 <footer class="gallery-item__footer">
                   <div class="likes">
                     <button type="button" class="likes__btn">Мне нравится</button>
-                    Нравится:<span class="likes__count">666</span>
+                    <span class="likes__count">Нравится: 666</span>
                   </div>
                 </footer>
               </div>
@@ -140,7 +138,7 @@
                 <footer class="gallery-item__footer">
                   <div class="likes">
                     <button type="button" class="likes__btn">Мне нравится</button>
-                    Нравится:<span class="likes__count">215</span>
+                    <span class="likes__count">Нравится: 215</span>
                   </div>
                 </footer>
               </div>
@@ -164,7 +162,7 @@
                 <footer class="gallery-item__footer">
                   <div class="likes">
                     <button type="button" class="likes__btn">Мне нравится</button>
-                    Нравится:<span class="likes__count">4</span>
+                    <span class="likes__count">Нравится: 4</span>
                   </div>
                 </footer>
               </div>
@@ -188,7 +186,7 @@
                 <footer class="gallery-item__footer">
                   <div class="likes">
                     <button type="button" class="likes__btn">Мне нравится</button>
-                    Нравится:<span class="likes__count">150</span>
+                    <span class="likes__count">Нравится: 150</span>
                   </div>
                 </footer>
               </div>
@@ -212,7 +210,7 @@
                 <footer class="gallery-item__footer">
                   <div class="likes">
                     <button type="button" class="likes__btn">Мне нравится</button>
-                    Нравится:<span class="likes__count">2560</span>
+                    <span class="likes__count">Нравится: 2560</span>
                   </div>
                 </footer>
               </div>
@@ -236,11 +234,10 @@
                 <ul class="photo-post__tabs-list">
                   <li>
                     <input type="radio" class="photo-post__tab-input" name="tabs" id="tab-1">
-                    <label class="photo-post__tab-label" for="tab-1">Обрезка</label>
+                    <label class="photo-post__tab-label photo-post__tab-label--clip" for="tab-1">Обрезка</label>
                     <div class="photo-post__photo-correct-controls">
-                      <div clalass="photo-post__photo-correct-scale">
+                      <div class="photo-post__photo-correct-scale">
                         <div class="photo-post__photo-correct-bar">
-                          123
                         </div>
                       </div>
                       <div class="photo-post__photo-correct-toggle">
@@ -249,11 +246,10 @@
                   </li>
                   <li>
                     <input type="radio" class="photo-post__tab-input" name="tabs" id="tab-2">
-                    <label class="photo-post__tab-label" for="tab-2">Заливка</label>
+                    <label class="photo-post__tab-label photo-post__tab-label--fill" for="tab-2">Заливка</label>
                     <div class="photo-post__photo-correct-controls">
-                      <div clalass="photo-post__photo-correct-scale">
-                        <div class="photo-post__photo-correct-bar">
-                          123
+                      <div class="photo-post__photo-correct-scale">
+                        <div class="photo-post__photo-correct-bar photo-post__photo-correct-bar--fill">
                         </div>
                       </div>
                       <div class="photo-post__photo-correct-toggle">
@@ -262,11 +258,10 @@
                   </li>
                   <li>
                     <input type="radio" class="photo-post__tab-input" name="tabs" id="tab-3">
-                    <label class="photo-post__tab-label" for="tab-3">Контрастность</label>
+                    <label class="photo-post__tab-label photo-post__tab-label--contrast" for="tab-3">Контрастность</label>
                     <div class="photo-post__photo-correct-controls">
-                      <div clalass="photo-post__photo-correct-scale">
-                        <div class="photo-post__photo-correct-bar">
-                          123
+                      <div class="photo-post__photo-correct-scale">
+                        <div class="photo-post__photo-correct-bar photo-post__photo-correct-bar--contrast">
                         </div>
                       </div>
                       <div class="photo-post__photo-correct-toggle">
@@ -274,10 +269,10 @@
                     </div>
                   </li>
                 </ul>
+                <button class="btn btn--post" type="submit">Запостить</button>
+                <button class="btn btn--cancel" type="reset">Отмена</button>
               </div>
             </div>
-            <button class="btn btn--post" type="submit">Запостить</button>
-            <button class="btn btn--cancel" type="reset">Отмена</button>
           </div>
         </section>
       </main>
