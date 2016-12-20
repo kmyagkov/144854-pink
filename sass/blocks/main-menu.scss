@@ -43,6 +43,7 @@
   border: none;
   background: url(../img/icon-menu-burger.svg) no-repeat;
   cursor: pointer;
+  z-index: 300;
   &--close {
     background: url(../img/icon-menu-cross.svg) no-repeat right;
   }
