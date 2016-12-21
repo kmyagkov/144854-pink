@@ -1,12 +1,8 @@
 .logo {
   &--page-header {
     position: relative;
-    width: 100%;
-    padding: 20px;
-    padding-bottom: 14px;
-    background: rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    z-index: 200;
+    @include wrapper();
+    padding: 21px 0 21px 0;
     img {
       width: 75px;
       height: 25px;
@@ -21,15 +17,13 @@
   }
 }
 
-.logo--no-transparent {
-  background: #283645;
-}
-
 @media ($tablet) {
   .logo {
     &--page-header {
-      padding: 40px;
-      padding-top: 25px;
+      img {
+        width: 150px;
+        height: 40px;
+      }
     }
   }
 }
@@ -37,11 +31,9 @@
 @media ($desktop) {
   .logo {
     &--page-header {
+      width: 150px;
       float: left;
-      width: 160px;
       padding: 0;
-      margin-right: 170px;
-      background: none;
     }
   }
 }

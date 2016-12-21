@@ -1,6 +1,13 @@
 .main-menu {
   position: relative;
-  margin-bottom: -70px;
+  width: 100%;
+  margin-bottom: -75px;
+  background: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.main-menu--no-transparent {
+  background: #283645;
 }
 
 .main-menu__list {
@@ -35,8 +42,8 @@
 
 .main-menu__toggle {
   position: absolute;
-  top: -45px;
-  right: 20px;
+  top: 20px;
+  right: 0;
   width: 50px;
   height: 25px;
   font-size: 0;
@@ -54,14 +61,18 @@
     margin-bottom: -100px;
   }
   .main-menu__toggle {
-    top: -60px;
-    right: 40px;
+    top: 30px;
   }
 }
 
 @media ($desktop) {
   .main-menu {
-    margin: none;
+    margin-bottom: -120px;
+  }
+  .main-menu__inner {
+    @include wrapper();
+    @include clearfix();
+    padding: 27px 0 40px 0;
   }
   .main-menu__list {
     display: flex;

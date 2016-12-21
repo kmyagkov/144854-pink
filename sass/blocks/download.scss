@@ -3,6 +3,10 @@
   padding: 28px 20px 28px 20px;
 }
 
+.download__wrapper {
+  @include wrapper();
+}
+
 .download__intro {
   display: none;
   width: 200px;
@@ -32,11 +36,12 @@
 @media ($tablet) {
   .download {
     width: 305px;
-    padding: 0px 0px 100px 40px;
+    padding: 0px 0px 100px;
     background: none;
   }
   .download__wrapper {
     width: 300px;
+    margin: none;
   }
   .download__intro {
     display: block;

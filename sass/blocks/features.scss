@@ -23,12 +23,13 @@
 }
 
 .features__list {
-  @include clearfix();
   padding-top: 100px;
   background: #f2f2f2 url(../img/bg-triangle-white.svg) no-repeat;
 }
 
 .features__item {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   &:last-child {
     p {
@@ -38,7 +39,7 @@
 }
 
 .features__item-title {
-  margin-bottom: 15px;
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
   font-family: $bold;
@@ -46,9 +47,12 @@
 }
 
 .features__image {
-  height: 275px;
-  overflow: hidden;
+  width: 154px;
+  height: 276px;
+  margin: 0 auto;
   text-align: center;
+  order: 1;
+  overflow: hidden;
   &--hidden {
     display: none;
   }
@@ -56,6 +60,7 @@
 
 @media ($tablet) {
   .features__header {
+    margin-bottom: 45px;
     p {
       width: 350px;
       font-size: 40px;
@@ -63,32 +68,34 @@
     }
     p:first-child {
       width: auto;
+      margin: 0;
     }
   }
   .features__wrapper {
     position: relative;
-    float: right;
-    width: 310px;
   }
   .features__image {
     position: absolute;
     bottom: 0;
-    left: -200px;
+    left: 0;
+    width: 270px;
+    height: 480px;
   }
   .features__item {
+    width: 310px;
+    padding-left: 310px;
     text-align: left;
   }
 }
 
 @media ($desktop) {
   .features__wrapper {
-    float: none;
     width: 940px;
     flex-direction: row;
     justify-content: space-between;
 }
   .features__item-title {
-    order: 2;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -96,19 +103,23 @@
     width: 100%;
   }
   .features__item {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+    width: 292px;
+    padding: 0;
     text-align: center;
     p {
-      order: 3;
       font-size: 18px;
       line-height: 30px;
+    }
+    p:last-child {
+      margin: 0;
     }
   }
   .features__image {
     position: static;
-    order: 1;
+    width: 292px;
+    height: 302px;
+    margin-bottom: 55px;
+    order: 0;
     &--hidden {
       display: block;
     }

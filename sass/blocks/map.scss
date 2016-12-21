@@ -1,6 +1,30 @@
 .map {
-  height: 200px;
-  background: url(../img/bg-triangle-white-footer.svg) no-repeat 50% 0,
-              url(../img/icon-map-marker.svg) no-repeat 50% 60%,
-              #ffffff url(../img/bg-map-mobile@1x.png) no-repeat 50% 100%;
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
+              #ffffff url("../img/bg-map-mobile@1x.png") no-repeat 50% 100%;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50px;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% -1px;
+    z-index: 15;
+  }
+}
+
+@media ($tablet) {
+  .map {
+    height: 400px;
+  }
+  &::before {
+    height: 150px;
+  }
+}
+
+@media ($desktop) {
+  .map {
+    height: 520px;
+  }
 }

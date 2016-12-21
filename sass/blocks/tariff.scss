@@ -5,6 +5,12 @@
   overflow: hidden;
 }
 
+.tariff__table-wrapper {
+  @include container();
+  position: relative;
+  overflow: hidden;
+}
+
 .tariff__description {
   position: relative;
   width: 840px;
@@ -70,7 +76,6 @@
     background: none;
     border: none;
   }
-
   &--include {
     &::after {
       position: absolute;

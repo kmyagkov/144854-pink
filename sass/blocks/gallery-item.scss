@@ -1,24 +1,6 @@
 .gallery-item {
   position: relative;
   margin-bottom: 20px;
-  &--panorama {
-    &::before {
-      position: absolute;
-      content: "Панорама дня";
-      top: 0;
-      right: 20px;
-      width: 140px;
-      height: 24px;
-      paddin-top: 12px;
-      font-family: $bold;
-      font-size: 12px;
-      line-height: 24px;
-      text-transform: uppercase;
-      text-align: center;
-      background: #d22856;
-      color: #ffffff;
-    }
-  }
 }
 
 .gallery-item__wrapper {
@@ -41,8 +23,30 @@
 }
 
 .gallery-item__photo {
+  position: relative;
   line-height: 0;
   text-align: center;
+  &--panorama {
+    width: 320px;
+    height: 137px;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      content: "Панорама дня";
+      top: 0;
+      right: 20px;
+      width: 140px;
+      height: 24px;
+      paddin-top: 12px;
+      font-family: $bold;
+      font-size: 12px;
+      line-height: 24px;
+      text-transform: uppercase;
+      text-align: center;
+      background: #d22856;
+      color: #ffffff;
+    }
+  }
 }
 
 .gallery-item__user-name {
@@ -87,6 +91,12 @@
       }
     }
   }
+  .gallery-item__photo {
+    &--panorama {
+      width: 700px;
+      height: 509px;
+    }
+  }
 }
 
 @media ($desktop) {
@@ -98,6 +108,12 @@
       &:nth-child(3n) {
         margin-right: 0;
       }
+    }
+  }
+  .gallery-item__photo {
+    &--panorama {
+      width: 1200px;
+      height: 506px;
     }
   }
 }

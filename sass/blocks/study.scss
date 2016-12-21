@@ -23,9 +23,8 @@
 }
 
 .study__content {
-  float: right;
   width: 310px;
-  padding-left: 10px;
+  padding-left: 310px;
 }
 
 .study__learn-more {
@@ -59,7 +58,6 @@
       color: #d22856;
       border: 13px solid #d22856;
       border-radius: 50%;
-
     }
   }
 }
@@ -69,8 +67,8 @@
     background-color: #f2f2f2;
   }
   .study__content {
-    float: left;
     width: 530px;
+    padding-left: 380px;
     p {
       font-size: 18px;
       line-height: 30px;

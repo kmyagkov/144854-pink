@@ -6,32 +6,38 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
-      <header class="page-header">
-        <div class="page-header__wrapper page-header__wrapper--bg">
+     <header class="page-header">
+      <h1 class="visually-hidden">
+        Мобильное приложение PINK
+      </h1>
+      <nav class="main-menu">
+        <div class="main-menu__inner">
           <div class="logo logo--page-header">
             <a href="index.html">
-             <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
+              </picture>
             </a>
-          </div>
-          <nav class="main-menu">
-            <button class="main-menu__toggle" type="button">Открыть меню</button>
-            <ul class="main-menu__list">
-              <li class="main-menu__item">
-                <a class="main-menu__link"  href="index.html">Главная</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" >Фотографии</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link"  href="form.html">Конкурс</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
+          <button class="main-menu__toggle" type="button">Открыть меню</button>
         </div>
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link">Фотографии</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+        </div>
+        </nav>
         <section class="intro">
           <h1 class="intro__title">
               Фотографии пользователей
@@ -47,9 +53,13 @@
             Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
           <article class="gallery-item gallery-item--panorama">
-            <div class="gallery-item__photo">
+            <div class="gallery-item__photo gallery-item__photo--panorama">
               <a href="">
-                <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorama">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+                  <source media="(min-width: 700px)" srcset="img/panorama-tablet@1x.jpg">
+                  <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorama">
+                </picture>
               </a>
             </div>
             <div class="gallery-item__wrapper--panorama">
@@ -75,7 +85,11 @@
               <div class="gallery-item__wrapper">
                 <div class="gallery-item__photo">
                   <a href="">
-                    <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo1">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg">
+                      <source media="(min-width: 700px)" srcset="img/photo-1-tablet@1x.jpg">
+                      <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo1">
+                    </picture>
                   </a>
                 </div>
                 <blockquote class="gallery-item__comment">
@@ -99,7 +113,11 @@
               <div class="gallery-item__wrapper">
                 <div class="gallery-item__photo">
                   <a href="">
-                    <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo2">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg">
+                      <source media="(min-width: 700px)" srcset="img/photo-2-tablet@1x.jpg">
+                      <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo1">
+                    </picture>
                   </a>
                 </div>
                 <blockquote class="gallery-item__comment">
@@ -123,7 +141,11 @@
               <div class="gallery-item__wrapper">
                 <div class="gallery-item__photo">
                   <a href="">
-                    <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo3">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg">
+                      <source media="(min-width: 700px)" srcset="img/photo-3-tablet@1x.jpg">
+                      <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo1">
+                    </picture>
                   </a>
                 </div>
                 <blockquote class="gallery-item__comment">
@@ -147,7 +169,11 @@
               <div class="gallery-item__wrapper">
                 <div class="gallery-item__photo">
                   <a href="">
-                    <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo4">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg">
+                      <source media="(min-width: 700px)" srcset="img/photo-4-tablet@1x.jpg">
+                      <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo1">
+                    </picture>
                   </a>
                 </div>
                 <blockquote class="gallery-item__comment">
@@ -171,7 +197,11 @@
               <div class="gallery-item__wrapper">
                 <div class="gallery-item__photo">
                   <a href="">
-                    <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo5">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg">
+                      <source media="(min-width: 700px)" srcset="img/photo-5-tablet@1x.jpg">
+                      <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo1">
+                    </picture>
                   </a>
                 </div>
                 <blockquote class="gallery-item__comment">
@@ -195,7 +225,11 @@
               <div class="gallery-item__wrapper">
                 <div class="gallery-item__photo">
                   <a href="">
-                    <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo6">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg">
+                      <source media="(min-width: 700px)" srcset="img/photo-6-tablet@1x.jpg">
+                      <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo1">
+                    </picture>
                   </a>
                 </div>
                 <blockquote class="gallery-item__comment">
@@ -217,7 +251,6 @@
             </article>
           </div>
         </section>
-        <!-- upd -->
         <section class="photo-post">
           <div class="photo-post__wrapper">
             <p class="photo-post__intro">
@@ -228,7 +261,13 @@
             </p>
             <div class="photo-post__interface">
               <div class="photo-post__image">
-                <img src="img/photo-7-mobile@1x.jpg" width="280" height="180" alt="photo7">
+                <a href="">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg">
+                    <source media="(min-width: 700px)" srcset="img/photo-7-tablet@1x.jpg">
+                    <img src="img/photo-7-mobile@1x.jpg" width="280" height="180" alt="photo1">
+                  </picture>
+                </a>
               </div>
               <div class="photo-post__photo-correct">
                 <ul class="photo-post__tabs-list">
