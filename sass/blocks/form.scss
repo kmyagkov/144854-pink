@@ -15,8 +15,9 @@
 }
 
 .form__intro {
+  width: 280px;
   padding: 48px 0 40px 0;
-  margin: 0;
+  margin: 0 auto;
   line-height: 30px;
   text-align: center;
   &--visible {
@@ -73,11 +74,18 @@
 }
 
 .form__checkbox:checked + .form__label::before {
-  background: red;
+  background: #ffffff url("../img/tick.png") no-repeat 50% 50%;
 }
 
-.form__radio:checked + .form__label::before {
-  background: red;
+.form__radio:checked + .form__label::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
+  background: #d22856;
+  border-radius: 50%;
 }
 
 .form__legend {
@@ -115,11 +123,11 @@
     &::before {
       position: absolute;
       content: "";
-      top: 3px;
-      left: 20px;
-      width: 20px;
-      height: 20px;
-      border: 1px solid #e5e5e5;
+      top: -7px;
+      left: 0px;
+      width: 36px;
+      height: 36px;
+      border: 2px solid #e5e5e5;
       background: #ffffff;
     }
   }
@@ -132,11 +140,11 @@
     &::before {
       position: absolute;
       content: "";
-      top: 3px;
-      left: 20px;
-      width: 20px;
-      height: 20px;
-      border: 1px solid #e5e5e5;
+      top: -7px;
+      left: 0;
+      width: 36px;
+      height: 36px;
+      border: 2px solid #e5e5e5;
       border-radius: 50%;
       background: #ffffff;
     }
@@ -172,6 +180,10 @@
     width: 640px;
     margin: 0 auto;
   }
+  .form__inner {
+    width: auto;
+    margin: 0;
+  }
   .form__intro {
     width: 500px;
     margin: 0 auto;
@@ -186,11 +198,17 @@
   }
   .form__legend {
     width: auto;
-    background: none;
+    padding: 0;
+    margin-top: -10px;
+    margin-bottom: 45px;
+    background: #ffffff;;
   }
   .form__fieldset {
+    width: 640px;
+    padding-left: 60px;
     border: 2px solid #e6e6e6;
     background: #ffffff;
+    box-sizing: border-box;
     &--platform-type {
       order: 1;
     }
@@ -202,8 +220,11 @@
     }
     &--emotions {
       order: 4;
+      padding-right: 60px;
+      padding-bottom: 50px;
     }
     &--name {
+      padding: 0;
       border: none;
       .form__input {
         flex: 1 1 100px;
@@ -238,21 +259,6 @@
   }
   .form__label {
     margin-right: 20px;
-    &--option {
-      margin-bottom: 55px;
-      &::before {
-        top: -1px;
-        width: 38px;
-        height: 38px;
-      }
-    }
-    &--radio {
-      &::before {
-        top: -1px;
-        width: 38px;
-        height: 38px;
-      }
-    }
   }
   .form__flex-container {
     flex-direction: column;
@@ -262,6 +268,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
 }
 
@@ -283,7 +290,6 @@
   }
   .form__fieldset {
     width: 100%;
-    padding: 0;
     border: 1px solid #e7e7e7;
     border-radius: 3px;
     &--name {
@@ -320,6 +326,6 @@
     }
   }
   .form__required-visible {
-  display: inline;
-}
+    display: inline;
+  }
 }
