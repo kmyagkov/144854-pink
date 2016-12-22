@@ -19,6 +19,15 @@
   }
   &--post {
     margin-bottom: 12px;
+    color: #d22856;
+    border-color: #d22856;
+    background: none;
+  }
+  &--cancel {
+    color: #283645;
+    border-color: #283645;
+    background: none;
+    opacity: 0.1;
   }
   &--undernote {
     width: 100%;

@@ -1,3 +1,7 @@
+.photo-post {
+  background: #f2f2f2;
+}
+
 .photo-post__wrapper {
   @include wrapper();
 }
@@ -9,6 +13,7 @@
 .photo-post__intro {
   line-height: 30px;
   text-align: center;
+  background: #ffffff;
 }
 
 .photo-post__interface {
@@ -82,18 +87,18 @@
   }
 }
 
-.photo-post__tab-input:checked + .photo-post__tab-label {
-
-}
-
 .photo-post__tab-input:checked ~ .photo-post__photo-correct-controls {
   display: block;
 }
 
 @media ($tablet) {
+  .photo-post__intro {
+    font-size: 18px;
+  }
   .photo-post__interface {
     flex-direction: row;
     justify-content: space-between;
+    background: #f2f2f2;
   }
   .photo-post__photo-correct {
     width: 300px;
@@ -122,6 +127,9 @@
 }
 
 @media ($desktop) {
+  .photo-post {
+    background: none;
+  }
   .photo-post__photo-correct {
     width: 470px;
   }

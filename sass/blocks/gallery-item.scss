@@ -37,7 +37,6 @@
       right: 20px;
       width: 140px;
       height: 24px;
-      paddin-top: 12px;
       font-family: $bold;
       font-size: 12px;
       line-height: 24px;
@@ -95,7 +94,16 @@
     &--panorama {
       width: 700px;
       height: 509px;
+      &::before {
+        height: 31px;
+        top: 57px;
+        right: 40px;
+        padding-top: 7px;
+      }
     }
+  }
+  .gallery-item__comment {
+    min-height: 100px;
   }
 }
 
@@ -114,6 +122,10 @@
     &--panorama {
       width: 1200px;
       height: 506px;
+    }
+    &::before {
+      top: 54px;
+      right: 130px;
     }
   }
 }

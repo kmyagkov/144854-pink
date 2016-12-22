@@ -72,7 +72,7 @@
   .main-menu__inner {
     @include wrapper();
     @include clearfix();
-    padding: 27px 0 40px 0;
+    padding: 27px 0 35px 0;
   }
   .main-menu__list {
     display: flex;
@@ -84,6 +84,7 @@
   }
   .main-menu__link {
     padding: 0;
+    padding-top: 5px;
     font-family: $regular;
     line-height: 18px;
   }

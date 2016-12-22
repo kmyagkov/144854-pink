@@ -14,17 +14,43 @@
   }
 }
 
+@media ($retina-dpi) and ($retina-dppx) {
+  .map {
+    background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
+                #ffffff url("../img/bg-map-mobile@2x.png") no-repeat 50% 100%;
+    background-size: auto, 421px auto;
+  }
+}
+
 @media ($tablet) {
   .map {
     height: 400px;
+    background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
+                #ffffff url("../img/bg-map-tablet@1x.png") no-repeat 50% 100%;
   }
   &::before {
     height: 150px;
+  }
+  @media ($retina-dpi) and ($tablet) {
+    .map {
+      background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
+                  #ffffff url("../img/bg-map-tablet@2x.png") no-repeat 50% 100%;
+      background-size: auto, 848px auto;
+    }
   }
 }
 
 @media ($desktop) {
   .map {
     height: 520px;
+    background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
+                  #ffffff url("../img/bg-map-desktop@1x.png") no-repeat 50% 100%;
+  }
+  @media ($retina-dpi) and ($tablet) {
+    .map {
+      background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
+                  #ffffff url("../img/bg-map-desktop@2x.png") no-repeat 50% 100%;
+      background-size: auto, 976px auto;
+    }
   }
 }
