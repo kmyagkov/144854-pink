@@ -1,13 +1,13 @@
 .reviews {
   position: relative;
-  padding-top: 45px;
+  padding-top: 40px;
+  padding-bottom: 70px;
 }
 
 .reviews__item {
   display: none;
   flex-direction: column;
   margin: 0;
-  padding: 0 20px;
   line-height: 30px;
   p {
     text-align: center;
@@ -37,6 +37,7 @@
 @media ($tablet) {
   .reviews__item {
     p {
+      margin-bottom: 36px;
       font-size: 18px;
       line-height: 30px;
     }
@@ -56,7 +57,7 @@
 
 @media ($desktop) {
   .reviews {
-    padding-top: 180px;
+    padding-top: 170px;
     background: url("../img/icon-quotes.svg") no-repeat 50% 74px;
   }
   .reviews__item {

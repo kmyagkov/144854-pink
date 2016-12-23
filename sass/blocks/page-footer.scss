@@ -1,5 +1,5 @@
 .page-footer {
-  margin-top: 40px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -31,10 +31,14 @@
   }
   .page-footer__copyright {
     align-self: flex-start;
+    padding-top: 15px;
   }
 }
 
 @media ($desktop) {
+  .page-footer {
+    padding-top: 70px;
+  }
   .page-footer__copyright {
     width: 150px;
     font-size: 18px;

@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 45px;
+  padding-top: 40px;
 }
 
 .contacts__wrapper {
@@ -28,6 +28,7 @@
   text-align: center;
   p {
     margin: 0;
+    margin-bottom: 5px;
     font-size: 18px;
     font-family: $bold;
     text-align: center;
@@ -35,31 +36,57 @@
 }
 
 .contacts__item {
-  &--marked {
-    text-decoration: none;
-    font-size: 24px;
-    color: #d22856;
-    font-family: $light;
+  text-decoration: none;
+  font-size: 24px;
+  color: #d22856;
+  font-family: $light;
+  &:hover {
+    color: #283645;
+    border-bottom: 1px solid #283645;
+  }
+  &:active {
+    color: #283645;
+    border-bottom: transparent;
+    opacity: 0.3;
   }
 }
 
 @media ($tablet) {
+  .contacts {
+    padding-top: 50px;
+  }
   .contacts__header {
     width: 400px;
+    margin-bottom: 45px;
     font-size: 40px;
     line-height: 45px;
+  }
+  .contacts__inner {
+    &--email {
+      margin-bottom: 50px;
+    }
   }
 }
 
 @media ($desktop) {
+  .contacts {
+    padding-top: 70px;
+  }
   .contacts__header {
     width: 470px;
+    margin-bottom: 60px;
     font-size: 50px;
     line-height: 58px;
   }
   .contacts__inner{
     p {
       margin-bottom: 25px;
+    }
+    &--adress {
+      order: 1;
+    }
+    &--email {
+      order: 2;
     }
   }
 }

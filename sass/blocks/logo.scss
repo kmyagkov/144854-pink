@@ -1,8 +1,8 @@
 .logo {
   &--page-header {
-    position: relative;
     @include wrapper();
-    padding: 21px 0 21px 0;
+    position: relative;
+    padding: 21px 0 18px 0;
     img {
       width: 75px;
       height: 25px;
@@ -20,10 +20,14 @@
 @media ($tablet) {
   .logo {
     &--page-header {
+      padding: 27px 0 36px 26px;
       img {
         width: 150px;
         height: 40px;
       }
+    }
+    &--page-footer {
+      padding-left: 20px;
     }
   }
 }
@@ -34,6 +38,7 @@
       width: 150px;
       float: left;
       padding: 0;
+      padding-left: 20px;
     }
   }
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -14,15 +15,15 @@
         <div class="main-menu__inner">
           <div class="logo logo--page-header">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
+               <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+               <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+               <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
             </picture>
             <button class="main-menu__toggle" type="button">Открыть меню</button>
           </div>
           <ul class="main-menu__list">
             <li class="main-menu__item">
-              <a class="main-menu__link">Главная</a>
+              <a class="main-menu__link main-menu__link--active">Главная</a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__link" href="photo.html">Фотографии</a>
@@ -192,7 +193,7 @@
           <input class="slider__input1" type="radio" name="tariff" id="tariff-input-1">
           <input class="slider__input2" type="radio" name="tariff" id="tariff-input-2" checked>
           <input class="slider__input3" type="radio" name="tariff" id="tariff-input-3">
-          <div class="slider__controls">
+          <div class="slider__controls slider__controls--tariff">
             <label class="slider__label1" for ="tariff-input-1"></label>
             <label class="slider__label2" for ="tariff-input-2"></label>
             <label class="slider__label3" for ="tariff-input-3"></label>
@@ -235,15 +236,15 @@
           <div class="contacts__list">
             <div class="contacts__inner contacts__inner--phone">
               <p>Звоните:</p>
-              <a href="tel:+7812555666" class="contacts__item contacts__item--marked">+7 (812) 555-66-66</a>
+              <a href="tel:+7812555666" class="contacts__item">+7 (812) 555-66-66</a>
             </div>
             <div class="contacts__inner contacts__inner--email">
               <p>Пишите:</p>
-              <a href="mailto:mail@htmlacademy.ru" class="contacts__item contacts__item--marked">mail@htmlacademy.ru</a>
+              <a href="mailto:mail@htmlacademy.ru" class="contacts__item">mail@htmlacademy.ru</a>
             </div>
             <div class="contacts__inner contacts__inner--adress">
               <p>Приезжайте в гости:</p>
-              <span class="contacts__item contacts__item--marked">
+              <span class="contacts__item">
                 ул. Большая Конюшенная, 19/8
               </span>
             </div>
@@ -278,5 +279,8 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); </script>
   </body>
 </html>
