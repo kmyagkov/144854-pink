@@ -48,9 +48,14 @@
   }
 }
 
+.main-menu__burger-wrapper {
+  @include wrapper();
+  position: relative;
+}
+
 .main-menu__toggle {
   position: absolute;
-  top: 20px;
+  top: -48px;
   right: 0;
   width: 50px;
   height: 25px;
@@ -83,15 +88,11 @@
     margin-bottom: -120px;
   }
   .main-menu__toggle {
-    top: 44px;
-    right: 10px;
+    top: -68px;
   }
 }
 
 @media ($desktop) {
-  .main-menu {
-    margin-bottom: -120px;
-  }
   .main-menu__inner {
     @include wrapper();
     @include clearfix();

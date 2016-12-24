@@ -9,7 +9,4 @@ open.addEventListener("click", function(event) {
   menu.classList.toggle("main-menu--no-transparent");
 });
 
-// close.addEventListener("click", function(event) {
-//  event.preventDefault();
-//  popup.classList.remove("main-menu__burger-popup--open");
-//});
+svg4everybody();

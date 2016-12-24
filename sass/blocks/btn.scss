@@ -56,7 +56,7 @@
   &--undernote {
     width: 100%;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     line-height: 30px;
     text-transform: uppercase;
     border-radius: 3px;
@@ -83,6 +83,7 @@
   &--popup {
     width: 100%;
     padding: 20px;
+    border: none;
     border-radius: 3px;
     background: #2aab6d;
     &:hover {
@@ -118,6 +119,15 @@
   .btn {
     &--download {
       margin-bottom: 65px;
+      font-size: 21px;
+    }
+    &--post,
+    &--cancel {
+      width: 183px;
+      margin-bottom: 0;
+    }
+    &--post {
+      margin-right: 43px;
     }
   }
 }

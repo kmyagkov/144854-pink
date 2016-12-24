@@ -4,6 +4,7 @@
   height: 240px;
   background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
               #ffffff url("../img/bg-map-mobile@1x.png") no-repeat 50% 100%;
+  background-size: auto, cover;
   &::before {
     position: absolute;
     content: "";
@@ -27,6 +28,7 @@
     height: 400px;
     background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
                 #ffffff url("../img/bg-map-tablet@1x.jpg") no-repeat 50% 100%;
+    background-size: auto, cover;
   }
   &::before {
     height: 70px;
@@ -45,6 +47,7 @@
     height: 500px;
     background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
                   #ffffff url("../img/bg-map-desktop@1x.jpg") no-repeat 50% 100%;
+    background-size: auto, cover;
   }
   &::before {
     height: 100px;

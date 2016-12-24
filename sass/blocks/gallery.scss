@@ -20,8 +20,15 @@
   }
   .gallery__intro {
     width: 460px;
-    padding-top: 95px;
+    padding-top: 93px;
     padding-bottom: 75px;
     font-size: 18px;
+  }
+}
+
+@media ($desktop) {
+  .gallery__intro {
+    width: 600px;
+    padding-bottom: 85px;
   }
 }

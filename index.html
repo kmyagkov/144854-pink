@@ -19,6 +19,8 @@
                <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
                <img src="img/logo-pink-white-mobile.svg" width="310" height="95" alt="PINK logo">
             </picture>
+          </div>
+          <div class="main-menu__burger-wrapper">
             <button class="main-menu__toggle" type="button">Открыть меню</button>
           </div>
           <ul class="main-menu__list">
@@ -38,8 +40,6 @@
         </div>
       </nav>
       <div class="page-header__wrapper page-header__wrapper--download">
-        <div class="page-header__image">
-        </div>
         <div class="page-header__inner">
           <section class="download">
             <div class="download__wrapper">
@@ -95,7 +95,7 @@
               <div class="features__image features__image--hidden">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png, img/iphone-screen-2-desktop@2x.png 2x">
-                  <source media="(min-width: 700px)" srcset="img/iphone-screen-2-tablet@1x.png img/iphone-screen-2-tablet@2x.png 2x">
+                  <source media="(min-width: 700px)" srcset="img/iphone-screen-2-tablet@1x.png, img/iphone-screen-2-tablet@2x.png 2x">
                   <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="iphone screen">
                 </picture>
               </div>
@@ -252,7 +252,9 @@
         </div>
       </section>
       <div class="map">
+        <!--
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=veSIpy-o6SgDfxxzgyrAD2qvIM2XyX8Q&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+-->
       </div>
     </main>
     <footer class="page-footer page-footer--index-mobile">
@@ -278,9 +280,8 @@
         </section>
       </div>
     </footer>
-    <script src="js/script.js"></script>
     <script src="js/picturefill.js"></script>
     <script src="js/svg4everybody.js"></script>
-    <script>svg4everybody(); </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

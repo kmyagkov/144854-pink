@@ -2,14 +2,15 @@
   &--page-header {
     @include wrapper();
     position: relative;
-    padding: 21px 0 18px 0;
+    padding: 21px 0 16px 0;
     img {
       width: 75px;
       height: 25px;
     }
   }
   &--page-footer {
-    margin-bottom: 40px;
+    padding-top: 10px;
+    margin-bottom: 35px;
     img {
       width: 147px;
       height: 40px;
@@ -20,6 +21,7 @@
 @media ($tablet) {
   .logo {
     &--page-header {
+      margin: 0 auto;
       padding: 27px 0 36px 26px;
       img {
         width: 150px;

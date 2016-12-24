@@ -98,6 +98,10 @@
     }
   }
   .gallery-item__photo {
+    a {
+      font-size: 0;
+      line-height: 0;
+    }
     &--panorama {
       width: 700px;
       height: 509px;
@@ -111,18 +115,41 @@
   }
   .gallery-item__comment {
     padding: 25px;
-    min-height: 40px;
+    padding-bottom: 10px;
+    p {
+      min-height: 50px;
+    }
+    &--panorama {
+      padding: 25px;
+    }
   }
 }
 
 @media ($desktop) {
   .gallery-item {
+    margin-bottom: 55px;
+    &--panorama {
+      margin-bottom: 47px;
+    }
     &--layout {
       &:nth-child(even) {
         margin-right: 20px;
       }
       &:nth-child(3n) {
         margin-right: 0;
+      }
+    }
+  }
+  .gallery-item__wrapper {
+    &--panorama {
+      width: 940px;
+    }
+  }
+  .gallery-item__comment {
+    &--panorama {
+      margin-bottom: 0;
+      p {
+        min-height: 0;
       }
     }
   }
