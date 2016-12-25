@@ -11,14 +11,14 @@
 }
 
 .main-menu__inner {
-  @include wrapper();
+  width: 320px;
+  margin: 0 auto;
   @include clearfix();
   position: relative;
 }
 
 .main-menu__list {
   @include list-clear();
-  width: 100%;
   display: none;
   background: #283645;
   border-bottom: 1px solid #000000;
@@ -58,7 +58,7 @@
 .main-menu__burger-wrapper {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 20px;
   width: 50px;
   height: 25px;
   z-index: 300;
@@ -97,12 +97,21 @@
   .main-menu {
     margin-bottom: -120px;
   }
-  .main-menu__toggle {
-    top: -68px;
+  .main-menu__burger-wrapper {
+    top: 40px;
+    right: 40px;
+  }
+  .main-menu__inner {
+    width: 700px;
+    margin: 0 auto;
   }
 }
 
 @media ($desktop) {
+  .main-menu__inner {
+    @include wrapper();
+    padding: 27px 0 36px 0;
+  }
   .main-menu__list {
     display: flex;
     flex-direction: row;
