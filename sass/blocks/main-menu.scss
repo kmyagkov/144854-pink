@@ -10,8 +10,15 @@
   background: #283645;
 }
 
+.main-menu__inner {
+  @include wrapper();
+  @include clearfix();
+  position: relative;
+}
+
 .main-menu__list {
   @include list-clear();
+  width: 100%;
   display: none;
   background: #283645;
   border-bottom: 1px solid #000000;
@@ -49,19 +56,22 @@
 }
 
 .main-menu__burger-wrapper {
-  @include wrapper();
-  position: relative;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 50px;
+  height: 25px;
+  z-index: 300;
 }
 
 .main-menu__toggle {
-  position: absolute;
-  top: -48px;
-  right: 0;
+  display: inline-block;
+  vertical-align: middle;
   width: 50px;
   height: 25px;
   font-size: 0;
   border: none;
-  background: url(../img/icon-menu-burger.svg) no-repeat;
+  background: url(../img/icon-menu-burger.svg) no-repeat 50% 50%;
   cursor: pointer;
   z-index: 300;
   &:hover {
@@ -93,11 +103,6 @@
 }
 
 @media ($desktop) {
-  .main-menu__inner {
-    @include wrapper();
-    @include clearfix();
-    padding: 27px 0 35px 0;
-  }
   .main-menu__list {
     display: flex;
     flex-direction: row;

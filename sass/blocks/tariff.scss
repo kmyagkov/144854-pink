@@ -28,7 +28,6 @@
 }
 
 .tariff__title {
-  position: relative;
   width: 280px;
   padding: 15px 10px 20px 10px;
   color: #ffffff;
@@ -45,25 +44,30 @@
     border: none;
   }
   &--hit {
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: -1px;
-      width: 70px;
-      height: 75px;
-      background: url(../img/bg-hit.svg) no-repeat;
-    }
-    &::after {
-      position: absolute;
-      content: "ХИТ";
-      top: 10px;
-      left: 10px;
-      font-family: $regular;
-      font-size: 15px;
-      color: #ffffff;
-      transform: rotate(-45deg);
-    }
+    padding: 0;
+  }
+}
+
+.tariff__hit {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -16px;
+    left: -1px;
+    width: 70px;
+    height: 75px;
+    background: url(../img/bg-hit.svg) no-repeat;
+  }
+  &::after {
+    position: absolute;
+    content: "ХИТ";
+    top: -10px;
+    left: 10px;
+    font-family: $regular;
+    font-size: 15px;
+    color: #ffffff;
+    transform: rotate(-45deg);
   }
 }
 
@@ -76,39 +80,33 @@
 }
 
 .tariff__description-item {
-  position: relative;
   padding: 15px 20px 15px 23px;
   line-height: 30px;
   background: #ffffff;
   border: 3px solid #e5e5e5;
   border-top: none;
   box-sizing: border-box;
+  text-align: justify;
   &--visible {
     display: none;
     background: none;
     border: none;
   }
+}
+
+.tariff__description-item__status {
+  display: inline-block;
+  vertical-align: bottom;
+  float: right;
   &--include {
-    &::after {
-      position: absolute;
-      content: "";
-      top: 20px;
-      right: 15px;
-      width: 31px;
-      height: 22px;
-      background: url(../img/icon-yes.svg) no-repeat;
-    }
+    width: 31px;
+    height: 22px;
+    background: url(../img/icon-yes.svg) no-repeat;
   }
   &--exclude {
-    &::after {
-      position: absolute;
-      content: "";
-      top: 15px;
-      right: 15px;
-      width: 27px;
-      height: 27px;
-      background: url(../img/icon-no.svg) no-repeat;
-    }
+    width: 27px;
+    height: 27px;
+    background: url(../img/icon-no.svg) no-repeat;
   }
 }
 
@@ -132,41 +130,33 @@
     &--empty {
       display: table-cell;
     }
+    &--hit {
+      padding: 0;
+    }
   }
   .tariff__description-item {
     width: 155px;
     padding: 7px 15px 7px 15px;
     font-size: 0;
+    text-align: center;
     &--visible {
       display: table-cell;
       font-size: 14px;
       text-transform: none;
+      text-align: left;
       background: #ffffff;
       border: 3px solid #e5e5e5;
     }
-    &--include {
-      &::after {
-        position: absolute;
-        content: "";
-        top: 10px;
-        right: 50%;
-        margin-right: -15px;
-        width: 31px;
-        height: 22px;
-        background: url(../img/icon-yes.svg) no-repeat;
-      }
+  }
+  .tariff__description-item__status {
+    float: none;
+  }
+  .tariff__hit {
+    &::before {
+      top: -9px;
     }
-    &--exclude {
-      &::after {
-        position: absolute;
-        content: "";
-        top: 10px;
-        right: 50%;
-        margin-right: -13px;
-        width: 27px;
-        height: 27px;
-        background: url(../img/icon-no.svg) no-repeat;
-      }
+    &::after {
+      top: 0;
     }
   }
 }
@@ -183,6 +173,9 @@
     width: 235px;
     padding: 20px 20px 20px 20px;
     font-size: 18px;
+    &--hit {
+      padding: 0;
+    }
   }
   .tariff__description-item {
     width: 235px;
@@ -190,32 +183,16 @@
     &--visible {
       font-size: 18px;
     }
-    &--include {
-      &::after {
-        position: absolute;
-        content: "";
-        top: 20px;
-        right: 50%;
-        margin-right: -15px;
-        width: 31px;
-        height: 22px;
-        background: url(../img/icon-yes.svg) no-repeat;
-      }
-    }
-    &--exclude {
-      &::after {
-        position: absolute;
-        content: "";
-        top: 15px;
-        right: 50%;
-        margin-right: -13px;
-        width: 27px;
-        height: 27px;
-        background: url(../img/icon-no.svg) no-repeat;
-      }
-    }
   }
   .tariff__price {
     font-size: 24px;
+  }
+  .tariff__hit {
+    &::before {
+      top: -20px;
+    }
+    &::after {
+      top: -10px;
+    }
   }
 }

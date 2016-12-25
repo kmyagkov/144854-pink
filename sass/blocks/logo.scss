@@ -1,8 +1,7 @@
 .logo {
   &--page-header {
-    @include wrapper();
-    position: relative;
-    padding: 21px 0 16px 0;
+    width: 75px;
+    padding: 21px 0 21px 0;
     img {
       width: 75px;
       height: 25px;
@@ -21,8 +20,7 @@
 @media ($tablet) {
   .logo {
     &--page-header {
-      margin: 0 auto;
-      padding: 27px 0 36px 26px;
+      width: 150px;
       img {
         width: 150px;
         height: 40px;
