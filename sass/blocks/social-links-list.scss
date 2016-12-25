@@ -5,3 +5,9 @@
   width: 176px;
   margin-bottom: 40px;
 }
+
+@media ($desktop) {
+  .social-links-list {
+    margin-left: 0;
+  }
+}

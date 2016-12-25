@@ -1,18 +1,16 @@
 .logo {
   &--page-header {
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    padding-bottom: 14px;
-    background: rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
+    width: 75px;
+    padding: 21px 0 21px 0;
+    margin-left: 20px;
     img {
       width: 75px;
       height: 25px;
     }
   }
   &--page-footer {
-    margin-bottom: 40px;
+    padding-top: 10px;
+    margin-bottom: 35px;
     img {
       width: 147px;
       height: 40px;
@@ -20,15 +18,18 @@
   }
 }
 
-.logo--no-transparent {
-  background: #283645;
-}
-
 @media ($tablet) {
   .logo {
     &--page-header {
-      padding: 40px;
-      padding-top: 25px;
+      width: 150px;
+      padding: 27px 0 36px 0;
+      img {
+        width: 150px;
+        height: 40px;
+      }
+    }
+    &--page-footer {
+      padding-left: 20px;
     }
   }
 }
@@ -36,9 +37,10 @@
 @media ($desktop) {
   .logo {
     &--page-header {
-      width: auto;
-      background: none;
+      width: 150px;
+      float: left;
       padding: 0;
+      margin-left: 10px;
     }
   }
 }
