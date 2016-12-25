@@ -18,8 +18,10 @@
 }
 
 @media ($retina-dpi) and ($retina-dppx) {
-  background: #2c3949 url("../img/bg-back-mobile@2x.jpg") no-repeat top center;
-  background-size: 462px auto;
+  .intro {
+    background: #2c3949 url("../img/bg-back-mobile@2x.jpg") no-repeat top center;
+    background-size: 462px auto;
+  }
 }
 
 @media ($tablet) {
@@ -36,28 +38,34 @@
     font-size: 50px;
     line-height: 60px;
   }
-  @media ($retina-dpi) and ($tablet),
-         ($retina-dppx) and ($tablet) {
+}
+
+@media ($retina-dpi) and ($tablet),
+       ($retina-dppx) and ($tablet) {
+  .intro {
     background: #2c3949 url("../img/bg-back-tablet@2x.jpg") no-repeat top center;
     background-size: 729px auto;
+  }
 }
 
 @media ($desktop) {
   .intro {
     padding-top: 180px;
     padding-bottom: 105px;
+    background: #2c3949 url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
     &--form {
       padding-bottom: 105px;
       .intro__title {
         width: 750px;
       }
     }
-    background: #2c3949 url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
   }
-  @media ($retina-dpi) and ($desktop),
-         ($retina-dppx) and ($desktop) {
+}
+
+@media ($retina-dpi) and ($desktop),
+       ($retina-dppx) and ($desktop) {
+  .intro {
     background: #2c3949 url("../img/bg-back-desktop@2x.jpg") no-repeat top center;
-        background-size: 853px auto;
-    }
+    background-size: 853px auto;
   }
 }

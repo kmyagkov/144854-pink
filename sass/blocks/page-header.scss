@@ -44,18 +44,19 @@
     padding-top: 210px;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat 20% bottom;
   }
-  @media ($retina-dpi) and ($tablet),
-         ($retina-dppx) and ($tablet) {
-    .page-header__wrapper {
-      &--download {
-        background: #2c3949 url("../img/bg-back-tablet@2x.jpg") no-repeat 50% bottom;
-        background-size: 729px auto;
-      }
+}
+
+@media ($retina-dpi) and ($tablet),
+       ($retina-dppx) and ($tablet) {
+  .page-header__wrapper {
+    &--download {
+      background: #2c3949 url("../img/bg-back-tablet@2x.jpg") no-repeat 50% bottom;
+      background-size: 729px auto;
     }
-     .page-header__inner {
-       background: url("../img/iphone-hand-tablet@2x.png") no-repeat 50% bottom;
-       background-size: 545px auto;
-    }
+  }
+  .page-header__inner {
+    background: url("../img/iphone-hand-tablet@2x.png") no-repeat 50% bottom;
+    background-size: 545px auto;
   }
 }
 
@@ -69,17 +70,18 @@
   .page-header__inner {
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat 50% bottom;
   }
-  @media ($retina-dpi) and ($desktop),
-         ($retina-dppx) and ($desktop) {
-    .page-header__wrapper {
-      &--download {
-        background: #2c3949 url("../img/bg-back-desktop@2x.jpg") no-repeat 50% bottom;
-        background-size: 853px auto;
-      }
+}
+
+@media ($retina-dpi) and ($desktop),
+       ($retina-dppx) and ($desktop) {
+  .page-header__wrapper {
+    &--download {
+      background: #2c3949 url("../img/bg-back-desktop@2x.jpg") no-repeat 50% bottom;
+      background-size: 853px auto;
     }
-    .page-header__inner {
-      background: url("../img/iphone-hand-desktop@2x.png") no-repeat 50% bottom;
-      background-size: 645px auto;
-    }
+  }
+  .page-header__inner {
+    background: url("../img/iphone-hand-desktop@2x.png") no-repeat 50% bottom;
+    background-size: 645px auto;
   }
 }

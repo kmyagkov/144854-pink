@@ -33,12 +33,13 @@
   &::before {
     height: 70px;
   }
-  @media ($retina-dpi) and ($tablet) {
-    .map {
-      background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
-                  #ffffff url("../img/bg-map-tablet@2x.jpg") no-repeat 50% 100%;
-      background-size: auto, 848px auto;
-    }
+}
+
+@media ($retina-dpi) and ($tablet) {
+  .map {
+    background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
+                #ffffff url("../img/bg-map-tablet@2x.jpg") no-repeat 50% 100%;
+    background-size: auto, 848px auto;
   }
 }
 
@@ -52,11 +53,12 @@
   &::before {
     height: 100px;
   }
-  @media ($retina-dpi) and ($tablet) {
-    .map {
-      background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
-                  #ffffff url("../img/bg-map-desktop@2x.jpg") no-repeat 50% 100%;
-      background-size: auto, 976px auto;
-    }
+}
+
+@media ($retina-dpi) and ($tablet) {
+  .map {
+    background: url("../img/icon-map-marker.svg") no-repeat 50% 60%,
+                #ffffff url("../img/bg-map-desktop@2x.jpg") no-repeat 50% 100%;
+    background-size: auto, 976px auto;
   }
 }

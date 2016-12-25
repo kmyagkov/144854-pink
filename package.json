@@ -22,7 +22,7 @@
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "grunt build",
+    "build": "grunt sass && grunt postcss",
     "start": "npm run build && grunt serve"
   },
   "editorconfig-cli": [

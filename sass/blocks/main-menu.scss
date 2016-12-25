@@ -4,6 +4,9 @@
   margin-bottom: -75px;
   background: rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
+  &--no-js {
+    background: #283645;
+  }
 }
 
 .main-menu--no-transparent {
@@ -23,6 +26,9 @@
   background: #283645;
   border-bottom: 1px solid #000000;
   &--open {
+    display: block;
+  }
+  &--no-js {
     display: block;
   }
 }
@@ -62,6 +68,9 @@
   width: 50px;
   height: 25px;
   z-index: 300;
+  &--no-js {
+    display: none;
+  }
 }
 
 .main-menu__toggle {
@@ -108,9 +117,13 @@
 }
 
 @media ($desktop) {
+  .main-menu {
+    background: rgba(0, 0, 0, 0.3);
+  }
   .main-menu__inner {
     @include wrapper();
     padding: 27px 0 36px 0;
+    background: none;
   }
   .main-menu__list {
     display: flex;
