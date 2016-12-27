@@ -18,7 +18,7 @@
 
 .gallery-item__comment {
   margin: 0;
-  padding: 16px 15px 13px 16px;
+  padding: 18px 15px 11px 17px;
   background: #f2f2f2;
   p {
     margin: 0;
@@ -107,8 +107,8 @@
       line-height: 0;
     }
     &--panorama {
-      width: 700px;
-      height: 509px;
+      width: 100%;
+      height: auto;
       &::before {
         height: 35px;
         top: 57px;
@@ -161,8 +161,8 @@
   .gallery-item__photo {
     height: 400px;
     &--panorama {
-      width: 1200px;
-      height: 506px;
+      width: 100%;
+      height: auto;
     }
     &::before {
       top: 54px;

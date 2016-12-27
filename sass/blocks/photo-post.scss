@@ -8,7 +8,7 @@
 }
 
 .photo-post__intro {
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 40px;
   line-height: 30px;
   text-align: center;
@@ -25,7 +25,7 @@
 .photo-post__interface {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 21px;
 }
 
 .photo-post__tabs-list {
@@ -33,8 +33,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 33px 35px 30px 35px;
-  margin-bottom: 40px;
+  padding: 33px 35px 38px 35px;
+  margin-bottom: 38px;
   border-bottom: 1px solid #dddfe0;
 }
 
@@ -214,7 +214,7 @@
   }
   .photo-post__interface {
     padding-left: 90px;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
   }
   .photo-post__photo-correct-controls {
     right: 90px;

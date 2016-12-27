@@ -2,11 +2,12 @@
   @include wrapper();
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .gallery__intro {
   width: 245px;
-  padding: 45px 0 50px 0;
+  padding: 45px 0 49px 0;
   margin: 0 auto;
   text-align: center;
   line-height: 30px;
@@ -16,7 +17,8 @@
   .gallery__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .gallery__intro {
     width: 460px;
