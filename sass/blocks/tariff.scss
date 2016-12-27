@@ -116,7 +116,7 @@
 
 @media ($tablet) {
   .tariff {
-    padding-top: 80px;
+    padding-top: 71px;
     padding-bottom: 65px;
   }
   .tariff__description {
@@ -156,8 +156,12 @@
     float: none;
   }
   .tariff__hit {
+    padding-top: 5px;
+    p {
+      padding-top: 5px;
+    }
     &::before {
-      top: -9px;
+      top: -10px;
     }
     &::after {
       top: 0;
@@ -167,7 +171,7 @@
 
 @media ($desktop) {
   .tariff {
-    padding-top: 110px;
+    padding-top: 104px;
     padding-bottom: 85px;
   }
   .tariff__description {
@@ -175,7 +179,7 @@
   }
   .tariff__title {
     width: 235px;
-    padding: 20px 20px 20px 20px;
+    padding: 15px 20px 20px 20px;
     font-size: 18px;
     &--hit {
       padding: 0;
@@ -183,7 +187,7 @@
   }
   .tariff__description-item {
     width: 235px;
-    padding: 15px 15px 15px 15px;
+    padding: 16px 15px 12px 19px;
     &--visible {
       font-size: 18px;
     }

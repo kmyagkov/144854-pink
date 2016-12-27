@@ -96,7 +96,8 @@
     position: relative;
   }
   .features__list {
-    padding-bottom: 38px;
+    padding-top: 70px;
+    padding-bottom: 42px;
     &::before {
       position: absolute;
       content: "";
@@ -110,14 +111,14 @@
   .features__image {
     position: absolute;
     bottom: -40px;
-    left: 16px;
+    left: 11px;
     width: 270px;
     height: 480px;
   }
   .features__item {
     width: 310px;
-    padding-top: 5px;
-    padding-left: 330px;
+    padding-top: 4px;
+    padding-left: 319px;
     text-align: left;
     &:last-child {
       p {
@@ -149,6 +150,7 @@
   .features__list {
     width: 100%;
     padding-top: 0;
+    padding-bottom: 40px;
     &::before {
       position: absolute;
       content: "";

@@ -57,7 +57,8 @@
 
 @media ($tablet) {
   .contacts {
-    padding-top: 50px;
+    padding-top: 47px;
+    padding-bottom: 0;
   }
   .contacts__header {
     width: 400px;
@@ -67,14 +68,14 @@
   }
   .contacts__inner {
     &--email {
-      margin-bottom: 50px;
+      margin-bottom: 46px;
     }
   }
 }
 
 @media ($desktop) {
   .contacts {
-    padding-top: 70px;
+    padding-top: 78px;
   }
   .contacts__header {
     width: 470px;

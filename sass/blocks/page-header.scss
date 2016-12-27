@@ -45,7 +45,8 @@
   .page-header__inner {
     @include wrapper();
     padding-top: 210px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 20% bottom;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat -30px 192px;
+    background-clip: border-box;
   }
 }
 
