@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: #ffffff;
+  background: #1d2631;
 }
 
 .page-header__wrapper {
@@ -10,13 +11,15 @@
   &--download {
     width: 100%;
     padding-top: 170px;
-    background: #2c3949 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 6px;
+    background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 6px;
   }
 }
 
 .page-header__inner {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 300px;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat left 13px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 1% 13px;
 }
 
 @media ($retina-dpi) and ($retina-dppx) {
