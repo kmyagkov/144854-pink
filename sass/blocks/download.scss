@@ -36,7 +36,7 @@
 @media ($tablet) {
   .download {
     width: 305px;
-    padding: 0 0 110px 16px;
+    padding: 0 0 110px 10px;
     background: none;
   }
   .download__wrapper {
@@ -58,6 +58,7 @@
 
 @media ($desktop) {
   .download {
+    padding-top: 1px;
     padding-bottom: 85px;
   }
   .download__wrapper {
@@ -66,11 +67,12 @@
   }
   .download__intro {
     width: 250px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
+    padding-left: 2px;
     font-size: 50px;
-    line-height: 58px;
+    line-height: 60px;
   }
   .download__links-list {
-    margin-bottom: 55px;
+    margin-bottom: 53px;
   }
 }

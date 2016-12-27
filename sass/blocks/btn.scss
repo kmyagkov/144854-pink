@@ -2,7 +2,7 @@
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  padding: 15px 15px;
+  padding: 14px 16px 17px 16px;
   font-family: $bold;
   font-size: 18px;
   line-height: 18px;
@@ -15,7 +15,7 @@
   cursor: pointer;
   box-sizing: border-box;
   &--download {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
     &:hover {
       color: #d22856;
       background: #ffffff;
