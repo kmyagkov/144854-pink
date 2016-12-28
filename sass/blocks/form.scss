@@ -319,7 +319,7 @@
     width: auto;
     padding: 0 20px;
     margin-top: -10px;
-    margin-left: -20px;
+    margin-left: -40px;
     margin-bottom: 45px;
     background: #ffffff;
     &--contacts {
@@ -346,10 +346,11 @@
     }
     &--contacts {
       order: 2;
-      padding: 0 60px 22px 60px;
+      padding: 2px 60px 22px 60px;
     }
     &--achievement {
       order: 3;
+      padding-top: 4px;
       margin-bottom: 53px;
     }
     &--emotions {
@@ -365,6 +366,11 @@
       .form__input {
         flex: 1 1 100px;
         width: auto;
+      }
+      .form__label {
+        padding-left: 0;
+        padding-top: 2px;
+        margin-right: 17px;
       }
     }
   }
@@ -386,15 +392,15 @@
     &--contacts {
       flex-direction: column;
       position: relative;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
       .form__input {
         order: 1;
       }
       .form__label {
         order: 2;
         align-self: flex-start;
-        padding-left: 30px;
-        padding-top: 10px;
+        padding-left: 20px;
+        padding-top: 11px;
       }
     }
     &--phone {
@@ -419,6 +425,9 @@
         background: #e5e5e5 url("../img/icon-mail.svg") no-repeat 50% 50%;
       }
     }
+    &--achievement {
+      margin-bottom: 50px;
+    }
   }
   .form__label {
     padding-left: 7px;
@@ -427,7 +436,7 @@
       padding-left: 57px;
     }
     &--option {
-      padding-left: 65px;
+      padding-left: 60px;
     }
   }
   .form__flex-container {
@@ -491,10 +500,14 @@
       margin-right: 70px;
       margin-bottom: 10px;
       border: none;
+      .form__label {
+        margin-right: 18px;
+      }
     }
     &--contacts {
       height: 160px;
       margin-top: 55px;
+      padding-top: 0;
       padding-bottom: 0;
       box-sizing: border-box;
       .form__item {
@@ -520,7 +533,7 @@
     &--platform-type {
       width: 435px;
       height: 295px;
-      padding-left: 71px;
+      padding-left: 75px;
       margin-bottom: 10px;
       .form__label {
         padding-left: 60px;
@@ -531,6 +544,12 @@
     }
     &--achievement {
       margin-bottom: 65px;
+      .form__legend {
+        margin-bottom: 40px;
+      }
+      .form__label {
+        padding-left: 55px;
+      }
     }
   }
   .form__item {

@@ -23,6 +23,7 @@
 .main-menu__list {
   @include list-clear();
   display: none;
+  padding-top: 2px;
   background: #283645;
   border-bottom: 1px solid #000000;
   &--open {
@@ -113,6 +114,9 @@
   .main-menu__inner {
     width: 660px;
     margin: 0 auto;
+  }
+  .main-menu__list {
+    padding-top: 0;
   }
 }
 
